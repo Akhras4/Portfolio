@@ -1,0 +1,46 @@
+div .logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: transparent;
+}
+svg{
+    background-color: transparent;
+    fill: transparent;  
+}
+@keyframes stroke {
+    0% { stop-color: #2c8ee9; }
+    40% { stop-color: #e78ab1; }
+    100% { stop-color: #54918c; }
+  }
+  #portfoilo stop {
+    animation: stroke 2s infinite linear;
+    stop-opacity:1
+  }
+  @keyframes light {
+    20% { stop-color: #5570c9; }
+    60% { stop-color: #2689a7; }
+    100% { stop-color: #1030bd; }
+  }
+  
+  #lineGradient stop {
+    animation: light 2s infinite ;
+    stop-opacity: 1;
+  }
+  @keyframes moveLight {
+    0% { filter: url(#lightEffect) drop-shadow(0 0 10px #ffffff); }
+    25% { filter: url(#lightEffect) drop-shadow(10px 0 10px #ffffff); }
+    50% { filter: url(#lightEffect) drop-shadow(0 10px 10px #ffffff); }
+    75% { filter: url(#lightEffect) drop-shadow(-10px 0 10px #ffffff); }
+    100% { filter: url(#lightEffect) drop-shadow(0 0 10px #ffffff); }
+  }
+  
+ #light  {
+    animation: moveLight 5s infinite;
+  }
+
+      /* #Vector_10 , #Vector_9{
+        display:none;
+      } */
+  
