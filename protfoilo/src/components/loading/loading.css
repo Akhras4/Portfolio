@@ -1,0 +1,24 @@
+ path,g,.loadingPage rect,.loadingPage > svg {
+    overflow-y:hidden;
+    overflow-x: visible !important;
+    width: 100%;
+    height: 100%;
+    clip-path: inset(0 0 0 0); 
+}
+div .loadingPage{
+    width: 100%;
+    height: 100%;
+   overflow-y:hidden;
+   overflow-x: visible;
+   margin: 0 auto;
+}
+@keyframes stroke {
+    0% { stop-color: #2c8ee9; }
+    40% { stop-color: #e78ab1; }
+    100% { stop-color: #54918c; }
+  }
+  #text stop {
+    animation: stroke 2s infinite linear;
+    stop-opacity:1
+  }
+
