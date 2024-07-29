@@ -64,7 +64,7 @@ export default function Logo() {
         window.removeEventListener('scroll', updatePathColors);
         window.removeEventListener('resize', updatePathColors);
       };
-    }, []);
+    }, [updatePathColors]);
   return (
     <div className='logo'>
           <svg ref={svgRef} width="240" height="93" viewBox="0 0 240 93" fill="none">
@@ -91,8 +91,6 @@ export default function Logo() {
     <path id="Vector_11" d="M70.1895 9L50.2947 17.3525H57L43 38.8302L50 20.8326H43.9947L50 9H56.1895Z" />
     <g id="Frame">
       <rect width="240" height="93" />
-      <path id="Vector 1" d="M17 18V70" stroke="black" stroke-width="7" stroke-linecap="round"/>
-      <path id="Vector 2" d="M221 18V70" stroke="black" stroke-width="7" stroke-linecap="round"/>
       <g id="AKHRAS" >
         <path
           id="Vector"
