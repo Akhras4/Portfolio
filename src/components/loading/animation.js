@@ -6,10 +6,12 @@ export const animationText=()=>{
     const dark  = document.querySelectorAll('[id*="Cloud dark"]')
     const stars=document.querySelectorAll('[id*=Ellipse]')
     const elements=document.querySelectorAll('[id*="Hallo"],[id*="HOI"],[id="Bonjour"],#MERHABA,#Hello','#Hallo_2')
+    const sun  = document.querySelectorAll('[id*="Group"]')
     const t1=gsap.timeline({defaults:{ease:"power4.out",duration:0.7} })
     t1.from(light ,{
         xPercent: -20,
-        duration: 10,
+        yPercent: 2,
+        duration: 20,
         yoyo:true,
         repeat: -1,
     })
@@ -34,39 +36,37 @@ export const animationText=()=>{
     text.from(`${textid} path`, {
             stagger:0.1,
             scale:1,
-            opacity:0.9,
+            opacity:30,
             transformOrigin: "center center" ,
             duration:0.4 ,
-            delay:0.4,
             autoAlpha:0,
         }) 
     }else{
     text.from(`${textid} path`, {
     stagger:-0.1,
-    scale:1,
-    opacity:0.9,
+    scale:1.2,
+    opacity:30,
     transformOrigin: "center center" ,
-    duration:0.4 ,
-    delay:0.4,
+    duration:0.9 ,
     autoAlpha:0, 
 })
     }
 text.to(`${textid} path`,{
     stagger:0.1,
     yPercent:300,
-    filter: "brightness(400%)",
-    duration:1,
+    filter: "brightness(200%)",
     opacity:0,
     transformOrigin: "center center" ,
-})
-.to(`${textid}`, {
-    delay: 1,
-    autoAlpha: 0, 
-    onComplete :()=>{
+    onStart :()=>{
         if (currentIndex < elements.length - 1) {
             pickId(elements, currentIndex + 1);
         }
     }
+})
+.to(`${textid}`, {
+    scale:2,
+    autoAlpha: 0, 
+   
 });
    }
   
@@ -81,7 +81,7 @@ text.to(`${textid} path`,{
 const t2=gsap.timeline({defaults:{ease:"power4.out",duration:0.7} })
 t2.from(dark,{
     xPercent: 20,
-    duration: 10,
+    duration: 20,
     yoyo:true,
     repeat: -1
 })
@@ -95,6 +95,7 @@ elements.forEach(element=>{
 paths.forEach(path => {
     path.setAttribute('fill', 'url(#text)');
 });
+
 
 }
 
