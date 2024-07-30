@@ -2,9 +2,16 @@ import React from 'react'
 import {useState,useEffect} from 'react' 
 import {animationText,linearGradient} from './animation'
 export default function Desktop({props}) {
-  useEffect(()=>{
-    animationText()
-  },[])
+  useEffect(() => {
+    const handleResize = () => {
+      animationText();
+    };
+    window.addEventListener('resize', handleResize);
+    animationText();
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <div className='loadingPage'>
        <svg
