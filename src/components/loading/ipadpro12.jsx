@@ -9,6 +9,9 @@ export default function Ipadpro12
     };
     window.addEventListener('resize', handleResize);
     animationText();
+    setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 100);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
