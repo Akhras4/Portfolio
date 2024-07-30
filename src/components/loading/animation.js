@@ -1,6 +1,5 @@
 import { gsap } from "gsap"
-import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-gsap.registerPlugin(DrawSVGPlugin);
+
 
 export const animationText=()=>{
     const light  = document.querySelectorAll('[id*="Cloud light"]')
@@ -25,7 +24,6 @@ export const animationText=()=>{
             duration: 0.7,
         });
     });
-
    const textAnimation=(textid,elements,currentIndex )=>{
     const text= gsap.timeline({defaults:{ease:"power4.out", duration: 0.7 }})
     
