@@ -10,7 +10,7 @@ export default function Ipadpro11({props}) {
           <svg
     xmlns="http://www.w3.org/2000/svg"
     width={834}
-    height="100vh"
+    height={1194}
     fill="none"
     {...props}
   >

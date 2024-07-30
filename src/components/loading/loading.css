@@ -21,4 +21,7 @@ div .loadingPage{
     animation: stroke 2s infinite linear;
     stop-opacity:1
   }
+  #Bonjour,#Hallo_2,#Hallo,#HOI,#Hello,#MERHABA{
+    visibility: hidden;
+  }
 

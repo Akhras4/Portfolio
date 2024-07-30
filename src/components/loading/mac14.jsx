@@ -11,7 +11,7 @@ export default function Mac14({props}) {
          <svg
       xmlns="http://www.w3.org/2000/svg"
       width="1512"
-      height="100vh"
+      height={925}
       fill="none"
       viewBox="0 0 1512 925"
     >
