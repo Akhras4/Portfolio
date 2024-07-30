@@ -10,7 +10,7 @@ export default function Ipadmini({props}) {
          <svg
     xmlns="http://www.w3.org/2000/svg"
     width={744}
-    height='100vh'
+    height={1133}
     fill="none"
     {...props}
   >
