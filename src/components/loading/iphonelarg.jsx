@@ -20,7 +20,7 @@ export default function Iphonelarg({props}) {
         <svg
     xmlns="http://www.w3.org/2000/svg"
     width={430}
-    height={932}
+    height='100vh'
     fill="none"
     {...props}
   >
