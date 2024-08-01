@@ -36,11 +36,11 @@ export default function Logo() {
   
         if (elementUnderPath) {
           const colorUnderPath = getEffectiveBackgroundColor(elementUnderPath);
-          console.log(`Detected color under path: ${colorUnderPath}`);
+          // console.log(`Detected color under path: ${colorUnderPath}`);
   
         const currentFill = path.getAttribute('fill');
         const isGradientFill = currentFill && currentFill.includes("url('#liner')");
-        console.log(currentFill)
+        // console.log(currentFill)
           if (!isGradientFill) {
           if (colorUnderPath !== 'rgba(0, 0, 0, 0)' && colorUnderPath !== 'rgb(0, 0, 0)') {
             path.setAttribute('fill', 'black');
