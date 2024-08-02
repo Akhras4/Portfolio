@@ -1,0 +1,109 @@
+.container{
+    
+    
+}
+.lang{
+    display: inline-block;
+    position: relative;
+    margin-top: 1rem;
+    margin-right: 5em;
+}
+/* The CSS code `.lang g,.lang rect,.lang svg` is targeting the `g`, `rect`, and `svg` elements within
+elements with the class `.lang`. */
+.lang svg{
+    overflow: visible !important;
+    width: 100%;
+    height: 100%; 
+}
+.lang g{
+width: 100%;
+height: 100%; 
+}
+.lang rect{
+height: 50%;
+}
+
+@keyframes stroke {
+    0% { stop-color: #2c8ee9; }
+    40% { stop-color: #e78ab1; }
+    100% { stop-color: #54918c; }
+  }
+  #gradientLang stop {
+    animation: stroke 2s infinite linear;
+    stop-opacity:1
+  }
+ 
+  .arrow-filter{
+    fill: none; /* Hidden by default */
+    stroke: #000000;
+    transition: fill 0.5s ease, filter 0.5s ease; /* Smooth transition for fill color and filter effect */
+  }
+  
+
+  .arrow-filter {
+    fill: #000000; 
+    animation: none;
+  }
+  
+  .arrow-filter.active {
+    fill: #ffffff; 
+    filter: brightness(500%) ; 
+    stroke: #ffffff;
+     animation: arrowAnimation 2s infinite; 
+  }
+
+
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%; 
+    left: 50;
+    height: 100px;
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 10; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  
+@keyframes en {
+    0% { stop-color: #5da6eb; }
+    40% { stop-color: #e7e8e8; }
+    100% { stop-color: #2ba6f2; }
+  }
+  @keyframes fr {
+    0% { stop-color: red; }
+    40% { stop-color: #8623d2; }
+    100% { stop-color: #ff0000; }
+  }
+  @keyframes nl {
+    0% { stop-color: #fd7622; }
+    40% { stop-color: #ff0303; }
+    100% { stop-color: #e5c093; }
+  }
+  @keyframes ar {
+    0% { stop-color: #44ed55; }
+    40% { stop-color: #4dc06c; }
+    100% { stop-color: #e7e8e8; }
+  }
+
+  #gradientEN stop{
+    animation: en 3s infinite ease-in-out;
+  }
+  #gradientFR stop{
+    animation: fr 3s infinite ease-in-out;
+  }
+  #gradientNL stop{
+    animation: nl 3s infinite ease-in-out;
+  }
+  #gradientAR stop{
+    animation: ar 3s infinite ease-in-out;
+  }
+
+
+  @media screen and (max-width:800px) {
+    .lang{
+        margin-right: 0.5rem;
+    }
+  }

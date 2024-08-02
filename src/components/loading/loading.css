@@ -1,4 +1,4 @@
- path,g,.loadingPage rect,.loadingPage > svg {
+loadingPage path,loadingPage g,.loadingPage rect,.loadingPage > svg {
     overflow-y:hidden;
     overflow-x: visible !important;
     width: 100%;
