@@ -28,12 +28,12 @@ height: 50%;
     40% { stop-color: #e78ab1; }
     100% { stop-color: #54918c; }
   }
-  #gradientLang stop {
+  .lang #gradientLang stop {
     animation: stroke 2s infinite linear;
     stop-opacity:1
   }
  
-  .arrow-filter{
+  .lang .arrow-filter{
     fill: none; /* Hidden by default */
     stroke: #000000;
     transition: fill 0.5s ease, filter 0.5s ease; /* Smooth transition for fill color and filter effect */
