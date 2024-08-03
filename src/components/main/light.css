@@ -1,0 +1,90 @@
+.lightcon {
+    height: fit-content;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    
+}
+.lightcon svg{
+    overflow: visible !important;
+    width: 60vw;
+    height: 100%;
+}
+@keyframes light {
+    20% { stop-color: #5570c9; }
+    60% { stop-color: #2689a7; }
+    100% { stop-color: #1030bd; }
+  }
+  
+  .lightcon #lineGradientLight stop {
+    animation: light 2s infinite ;
+    stop-opacity: 1;
+  }
+  @keyframes moveLightLight {
+        0% { filter: url(#lightEffectLight) drop-shadow(0 50px 30px rgb(20, 160, 220)); }
+        25% { filter: url(#lightEffectLight) drop-shadow(10px 55px 30px #ffffff); }
+        50% { filter: url(#lightEffectLight) drop-shadow(0 25px 50px #ffffff); }
+        75% { filter: url(#lightEffectLight) drop-shadow(10px 15px 30px 8EBEF3); }
+        100% { filter: url(#lightEffectLight) drop-shadow(0 50px 30px #ffffff); }
+      
+  }
+  
+  .lightcon #light  {
+    animation: moveLightLight 10ms infinite;
+  }
+  .contactbar {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    width: 100%;
+    height: 20vh;
+    background-color: #000000;
+
+    gap:1rem
+  }
+  .contactbar > * {
+    cursor: pointer;
+
+  }
+  .contactbar svg {
+    width: 10vw;
+    height: 7vw;
+    overflow: visible;
+    transition: transform 0.3s;
+  }
+  .contactbar svg:hover {
+    transform: scale(1.5);
+& g{
+    filter:drop-shadow(0 50px 30px rgb(20, 160, 220));
+}
+  
+
+        
+
+
+  }
+  @keyframes twitch {
+    20% { stop-color: #6441a4; }
+    40% { stop-color: #1d0746; }
+    100% { stop-color: #816ca7; }
+  }
+  #icon_twitch stop{
+    animation: twitch 3s infinite  alternate-reverse  ;
+  }
+  @keyframes gmail {
+    10% { stop-color: #4285f4; }
+    20% { stop-color: #34a853; }
+    40% { stop-color: #fbbc04; }
+    60% { stop-color: #ea4335; }
+    80% { stop-color: #ea4335; }
+    100% { stop-color: #83947d; }
+  }
+  #icon_gmail stop{
+    animation: gmail 3s infinite  alternate-reverse both ;
+  }
+  @media  screen and (min-width:1000px) {
+    .contactbar svg {
+        width: 14vw;
+        height: 5vw;
+      }
+  }

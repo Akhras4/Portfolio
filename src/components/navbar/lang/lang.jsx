@@ -5,11 +5,12 @@ export default function Lang() {
   const [activeArrow, setActiveArrow] = useState(-1);
   const [isHovered, setIsHovered] = useState(false);
   const fram1Ref=useRef(null)
-  const [isMenuOpen, setIsMenuOpen] = useState(false); 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null); 
   useEffect(() => {
     let intervalId;
     let indix= -1
-    if (isHovered) {
+    if (isHovered ) {
         
       intervalId = setInterval(() => {
         // console.log(indix)
@@ -25,13 +26,11 @@ export default function Lang() {
     }
 
     return () => clearInterval(intervalId); 
-  }, [isHovered]); 
+  }, [isHovered,isMenuOpen]); 
 
 
   const handleClick = () => {
-    if (fram1Ref.current) {
-        fram1Ref.current.setAttribute("fill", "url(#gradientLang)");
-      }
+   
       setIsMenuOpen(!isMenuOpen);
   };
   const handelEnterPath=(id)=>{
@@ -50,12 +49,32 @@ export default function Lang() {
         path.setAttribute("fill", `#eee`);  
       }
   }
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsMenuOpen(false);
+      setIsHovered(false)
+    }
+  };
+
+  // Handle scroll
+  const handleScroll = () => {
+    setIsMenuOpen(false);
+  };
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div
       className='lang'
+      ref={menuRef}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => {
-        setIsHovered(false);
+        isMenuOpen?setIsHovered(true):setIsHovered(false);
         if (fram1Ref.current) {
           fram1Ref.current.setAttribute("fill", "none");
         }
@@ -157,7 +176,7 @@ export default function Lang() {
           <g className="dropdown-menu">
             <g
             id='en'
-            //   onClick={() => console.log('Language 1')}
+              onClick={() => setIsHovered(false)} //rest 
               style={{ cursor: 'pointer' }}
               onMouseEnter={()=>handelEnterPath('#en')}
               onMouseLeave={()=>handleLeavePath('#en')}
@@ -181,7 +200,7 @@ export default function Lang() {
             </g>
             <g
             id='fr'
-              onClick={() => console.log('Language 2')}
+            onClick={() => setIsHovered(false)}
               style={{ cursor: 'pointer' }}
               onMouseEnter={()=>handelEnterPath('#fr')}
               onMouseLeave={()=>handleLeavePath('#fr')}
