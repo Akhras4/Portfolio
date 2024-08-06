@@ -1,4 +1,5 @@
-import React, { useEffect, useState,useRef } from 'react';
+import React, { useEffect, useState,useRef, useContext } from 'react';
+ import LanguageContext from '../../../context/context'
 import './lang.css'; 
 
 export default function Lang() {
@@ -7,6 +8,7 @@ export default function Lang() {
   const fram1Ref=useRef(null)
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null); 
+  const {changeLanguage}=useContext(LanguageContext)
   useEffect(() => {
     let intervalId;
     let indix= -1
@@ -176,7 +178,7 @@ export default function Lang() {
           <g className="dropdown-menu">
             <g
             id='en'
-              onClick={() => setIsHovered(false)} //rest 
+              onClick={() => {setIsHovered(false) ;changeLanguage('en')} } //rest 
               style={{ cursor: 'pointer' }}
               onMouseEnter={()=>handelEnterPath('#en')}
               onMouseLeave={()=>handleLeavePath('#en')}
@@ -200,7 +202,7 @@ export default function Lang() {
             </g>
             <g
             id='fr'
-            onClick={() => setIsHovered(false)}
+            onClick={() => {setIsHovered(false) ;changeLanguage('fr')}}
               style={{ cursor: 'pointer' }}
               onMouseEnter={()=>handelEnterPath('#fr')}
               onMouseLeave={()=>handleLeavePath('#fr')}
@@ -224,7 +226,7 @@ export default function Lang() {
             </g>
             <g
             id='nl'
-              onClick={() => console.log('Language 3')}
+              onClick={() => {setIsHovered(false) ;changeLanguage('nl')}}
               style={{ cursor: 'pointer' }}
               onMouseEnter={()=>handelEnterPath('#nl')}
               onMouseLeave={()=>handleLeavePath('#nl')}
@@ -248,7 +250,7 @@ export default function Lang() {
             </g>
             <g
             id='ar'
-              onClick={() => console.log('Language 4')}
+              onClick={() => {setIsHovered(false) ;changeLanguage('ar')}}
               style={{ cursor: 'pointer' }}
               onMouseEnter={()=>handelEnterPath('#ar')}
               onMouseLeave={()=>handleLeavePath('#ar')}
