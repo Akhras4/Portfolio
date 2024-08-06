@@ -20,17 +20,27 @@
     animation: light 2s infinite ;
     stop-opacity: 1;
   }
-  @keyframes moveLightLight {
-        0% { filter: url(#lightEffectLight) drop-shadow(0 50px 30px rgb(20, 160, 220)); }
+  @-webkit-keyframes moveLightLight {
+        0% { filter: url(#lightEffectLight) drop-shadow(0 50px 30px rgb(20, 160, 220)) ; }
         25% { filter: url(#lightEffectLight) drop-shadow(10px 55px 30px #ffffff); }
         50% { filter: url(#lightEffectLight) drop-shadow(0 25px 50px #ffffff); }
         75% { filter: url(#lightEffectLight) drop-shadow(10px 15px 30px 8EBEF3); }
         100% { filter: url(#lightEffectLight) drop-shadow(0 50px 30px #ffffff); }
       
   }
+  @keyframes moveLightLight {
+    0% { filter: url(#lightEffectLight) drop-shadow(0 50px 30px rgb(20, 160, 220)) ; }
+    25% { filter: url(#lightEffectLight) drop-shadow(10px 55px 30px #ffffff); }
+    50% { filter: url(#lightEffectLight) drop-shadow(0 25px 50px #ffffff); }
+    75% { filter: url(#lightEffectLight) drop-shadow(10px 15px 30px 8EBEF3); }
+    100% { filter: url(#lightEffectLight) drop-shadow(0 50px 30px #ffffff); }
+  
+}
   
   .lightcon #light  {
     animation: moveLightLight 10ms infinite;
+    -webkit-animation: moveLightLight 10ms infinite;
+    opacity: 3;
   }
   .contactbar {
     display: flex;
@@ -55,6 +65,7 @@
     transform: scale(1.5);
 & g{
     filter: drop-shadow(0 -6mm 4mm rgb(78, 127, 234));
+    -webkit-filter: drop-shadow(0 -6mm 4mm rgb(78, 127, 234))
 }
   
 

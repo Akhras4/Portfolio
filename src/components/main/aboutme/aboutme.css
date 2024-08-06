@@ -5,10 +5,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
 
 }
-.aboutme-background {
-    background-image: url('../../../asset/image/stonewall1.jpeg'); /* Replace with your image path */
+.Aboutme .aboutme-background {
+    background-image: url('../../../asset/image/stonewall1.jpeg'); 
     width: 100%;
     height: 100%;
     background-size: contain;
@@ -17,4 +19,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
 }
+/* .Aboutme::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle 700px at center , rgba(46, 46, 46, 0.791) 0%, rgba(42, 41, 41, 0.7) 10%, rgba(25, 25, 25, 0.9) 20%, rgba(0, 0, 0, 1)  60%);
+    z-index: 1; 
+} */
