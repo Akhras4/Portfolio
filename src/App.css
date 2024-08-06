@@ -26,4 +26,6 @@ body{
   font-family: "Poppins";
   overflow-y: visible;
   background-color: var(--black);
+  /* filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210)); */
+  /* radial-gradient(125% 125% at 50% 10%, black 50%, rgb(26, 15, 26) 100%) */
 }

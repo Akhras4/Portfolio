@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <div className="navBar">
         <Logo />
-        <Lang />
+        <Lang  />
     </div>
   )
 }

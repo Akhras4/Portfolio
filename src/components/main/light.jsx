@@ -29,7 +29,7 @@ function Light() {
               </defs>
       
         <g id="Frame1">
-        <path fill="black" d="M0 0H333V58H0z"></path>
+        <path  d="M0 0H333V58H0z"></path>
         <g id="light">
           <g >
             <path fill="none" d="M8 37H325V47H8z"stroke="url(#lineGradientLight)" stroke-width="7" stroke-linecap="round" filter="url(#lightEffectLight)"></path>
@@ -115,13 +115,13 @@ function Light() {
                       <stop offset="100%" />
                   </linearGradient>
         </defs>
-        <g>
+    <g>
       <path stroke="url(#icon_gmail)" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6"></path>
       <path fill="url(#icon_gmail)" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15"></path>
       <path fill="url(#icon_gmail)" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2"></path>
       <path fill="url(#icon_gmail)" d="M72 74V48l24 18 24-18v26L96 92"></path>
       <path stroke="url(#icon_gmail)" d="M52 51v8l20 15V48l-5.6-4.2C60.46 39.35 52 43.58 52 51"></path>
-</g>    
+    </g>    
     </svg>
     <svg 
       xmlns="http://www.w3.org/2000/svg"

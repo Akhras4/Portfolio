@@ -1,3 +1,7 @@
 {
-    "Welcome to React": "Hoi in React and react-i18next"
-  }
+  "Welcome": "Hallo",
+  "name": "Ik ben Abdulrahman Akhras",
+  "position": "Een Fullstack Developer",
+  "where": "Uit Nijmegen, NL.",
+  "what i do": "Ik maak op maat gemaakte websites om bedrijven online beter te laten presteren."
+}
