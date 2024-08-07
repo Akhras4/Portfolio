@@ -13,6 +13,7 @@ export default function Aboutme() {
   const pathsNodeListText=document.querySelectorAll("[id*='textPath']")
   const pathsArr=Array.from(pathsNodeList)
   const pathsTextArr=Array.from(pathsNodeListText)
+  const fontSize = window.innerWidth < 600 ? '39px' : '40px';
   // console.log(pathsTextArr)
   useEffect(() => {
     const handelScroll=()=>{
@@ -186,40 +187,40 @@ export default function Aboutme() {
       <defs>
       </defs>
       <g id="text1">
-    <text font-size="40" fill="#fff" x="50" y="150">
+    <text className="responsive-text" style={{ fontSize: fontSize }}  fill="#fff" x="50" y="150">
       {t('aboutme1LineOne')}
     </text>
     <text font-size="40" fill="#fff" x="50" y="190">
       {t('aboutme1LineTwo')}
     </text>
-    <text font-size="40" fill="#fff" x="50" y="230">
+    <text className="responsive-text" style={{ fontSize: fontSize }}  fill="#fff" x="50" y="230">
       {t('aboutme1LineThree')}
     </text>
-    <text font-size="40" fill="#fff" x="50" y="270">
+    <text className="responsive-text" style={{ fontSize: fontSize }}  fill="#fff" x="50" y="270">
       {t('aboutme1LineFour')}
     </text>
-    <text font-size="40" fill="#fff" x="50" y="310">
+    <text className="responsive-text" style={{ fontSize: fontSize }}  fill="#fff" x="50" y="310">
       {t('aboutme1LineFive')}
     </text>
-    <text font-size="40" fill="#fff" x="50" y="350">
+    <text className="responsive-text" style={{ fontSize: fontSize }}  fill="#fff" x="50" y="350">
       {t('aboutme1LineSix')}
     </text>
-    <text font-size="40" fill="#fff" x="50" y="390">
+    <text className="responsive-text" style={{ fontSize: fontSize }}  fill="#fff" x="50" y="390">
       {t('aboutme1LineSeven')}
     </text>
-    <text font-size="40" fill="#fff" x="50" y="430">
+    <text className="responsive-text" style={{ fontSize: fontSize }}  fill="#fff" x="50" y="430">
       
     </text>
-    <text font-size="40" fill="#fff" x="50" y="470">
+    <text className="responsive-text" style={{ fontSize: fontSize }}  fill="#fff" x="50" y="470">
       {t('aboutme2LineOne')}
     </text>
-    <text font-size="40" fill="#fff" x="50" y="510">
+    <text className="responsive-text" style={{ fontSize: fontSize }}  fill="#fff" x="50" y="510">
       {t('aboutme2LineTwo')}
     </text>
-    <text font-size="40" fill="#fff" x="50" y="550">
+    <text className="responsive-text" style={{ fontSize: fontSize }}  fill="#fff" x="50" y="550">
       {t('aboutme2LineThree')}
     </text>
-    <text font-size="40" fill="#fff" x="50" y="590">
+    <text className="responsive-text" style={{ fontSize: fontSize }}  fill="#fff" x="50" y="590">
       {t('aboutme2LineFour')}
     </text>
   </g>
