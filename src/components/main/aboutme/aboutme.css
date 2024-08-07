@@ -92,4 +92,13 @@
     font-family: Arial, Helvetica, sans-serif;
     fill: #000;
   }
+  .responsive-text {
+    font-size: 40px;
+    fill: #fff;
+  }
+  @media screen and (max-width: 600px) {
+    .responsive-text {
+      font-size: 39px;
+    }
+  }
   
