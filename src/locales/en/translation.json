@@ -3,5 +3,16 @@
     "name":"I'm Abdulrahman Akhras",
     "position":"A Fullstuck Devloper",
     "where":"From Nijmegen,NL .",
-    "what i do":"I create custom websites to help businesses do better online."
+    "what i do":"I create custom websites to help businesses do better online.",
+    "aboutme1LineOne":"I am an Electrical Engineer living in Nijmegen",
+    "aboutme1LineTwo":"for the past four years, holding a work permit",
+    "aboutme1LineThree":"here. Recently, I completed a four-month",
+    "aboutme1LineFour":"bootcamp where I learned both frontend and",
+    "aboutme1LineFive":"and backend development, as well as APIs.",
+    "aboutme1LineSix":"I also gained foundational knowledge of GitHub,",
+    "aboutme1LineSeven":"Scrum, and Agile methodologies. ",
+    "aboutme2LineOne": "I am now transitioning my career to become",
+    "aboutme2LineTwo": "a Full Stack Developer because I truly enjoy",
+    "aboutme2LineThree": "writing code and continue to learn something",
+    "aboutme2LineFour": "new every day."
   }

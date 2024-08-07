@@ -20,7 +20,7 @@
     animation: light 2s infinite ;
     stop-opacity: 1;
   }
-  @-webkit-keyframes moveLightLight {
+  @-webkit-keyframes moveLightLight   {
         0% { filter: url(#lightEffectLight) drop-shadow(0 50px 30px rgb(20, 160, 220)) ; }
         25% { filter: url(#lightEffectLight) drop-shadow(10px 55px 30px #ffffff); }
         50% { filter: url(#lightEffectLight) drop-shadow(0 25px 50px #ffffff); }
@@ -40,7 +40,7 @@
   .lightcon #light  {
     animation: moveLightLight 10ms infinite;
     -webkit-animation: moveLightLight 10ms infinite;
-    opacity: 3;
+    opacity: 1;
   }
   .contactbar {
     display: flex;

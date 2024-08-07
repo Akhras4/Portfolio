@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 
 
 }
@@ -23,13 +24,72 @@
     top: 0;
     left: 0;
 }
-/* .Aboutme::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(circle 700px at center , rgba(46, 46, 46, 0.791) 0%, rgba(42, 41, 41, 0.7) 10%, rgba(25, 25, 25, 0.9) 20%, rgba(0, 0, 0, 1)  60%);
-    z-index: 1; 
-} */
+.Aboutme::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle 700px at center, 
+    rgba(46, 46, 46, var(--stop1-opacity, 0.791)) 0%, 
+    rgba(42, 41, 41, var(--stop2-opacity, 0.7)) 10%, 
+    rgba(25, 25, 25, var(--stop3-opacity, 0.9)) 20%, 
+    rgba(0, 0, 0, var(--stop4-opacity, 1)) 60%);
+  z-index: 1; 
+  transition: background-image 1s ease-out; 
+}
+
+.Aboutme.no-background {
+  --stop1-opacity: 0;
+  --stop2-opacity: 0;
+  --stop3-opacity: 0;
+  --stop4-opacity: 0;
+}
+
+@keyframes AboutmeText {
+    20% { stop-color: #5570c9; }
+    60% { stop-color: #2689a7; }
+    100% { stop-color: #1030bd; }
+  }
+  @keyframes AboutmeLight{
+    10% { stop-color: #cf40ad; }
+    40% { stop-color: #fd1baa; }
+    100% { stop-color: #ee23b1; }
+  }
+  
+  .Aboutme #lineGradientAboutmeText stop {
+    animation: AboutmeText 10ms infinite ;
+    stop-opacity: 1;
+  }
+  .Aboutme #lineGradientAboutmeLight stop {
+    animation: AboutmeLight 10ms infinite ;
+    stop-opacity: 1;
+  }
+  @-webkit-keyframes moveLightAboutmeLight {
+    0% { filter: url(#lightEffectAboutmeLight) drop-shadow(0 50px 30px rgb(255, 113, 238)); }
+    25% { filter: url(#lightEffectAboutmeLight) drop-shadow(10px 55px 30px rgb(255, 113, 238)); }
+    50% { filter: url(#lightEffectAboutmeLight) drop-shadow(0 25px 50px rgb(255, 113, 238)); }
+    75% { filter: url(#lightEffectAboutmeLight) drop-shadow(10px 15px 30px rgb(255, 113, 238)); }
+    100% { filter: url(#lightEffectAboutmeLight) drop-shadow(0 50px 30px rgb(255, 113, 238)); }
+  }
+  
+  @keyframes moveLightAboutmeLight {
+    0% { filter: url(#lightEffectAboutmeLight) drop-shadow(0 30px 30px rgb(255, 113, 238)); }
+    25% { filter: url(#lightEffectAboutmeLight) drop-shadow(10px 35px 30px rgb(255, 113, 238)); }
+    50% { filter: url(#lightEffectAboutmeLight) drop-shadow(0 25px 30px rgb(255, 113, 238)); }
+    75% { filter: url(#lightEffectAboutmeLight) drop-shadow(10px 15px 30px rgb(255, 113, 238)); }
+    100% { filter: url(#lightEffectAboutmeLight) drop-shadow(0 30px -30px rgb(255, 113, 238)); }
+  }
+.Aboutme path[id^='RectangleAboutme'] {
+    animation: moveLightAboutmeLight 1s infinite;
+    -webkit-animation: moveLightAboutmeLight 1s infinite;
+    opacity: 1;
+  }
+ .aboutme #text1 {
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    fill: #000;
+  }
+  
