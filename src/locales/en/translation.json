@@ -9,10 +9,14 @@
     "aboutme1LineThree":"here. Recently, I completed a four-month",
     "aboutme1LineFour":"bootcamp where I learned both frontend and",
     "aboutme1LineFive":"and backend development, as well as APIs.",
-    "aboutme1LineSix":"I also gained foundational knowledge of GitHub,",
-    "aboutme1LineSeven":"Scrum, and Agile methodologies. ",
+    "aboutme1LineSix":"I also gained foundational knowledge of ",
+    "aboutme1LineSeven":"GitHub, Scrum, and Agile methodologies. ",
     "aboutme2LineOne": "I am now transitioning my career to become",
     "aboutme2LineTwo": "a Full Stack Developer because I truly enjoy",
     "aboutme2LineThree": "writing code and continue to learn something",
-    "aboutme2LineFour": "new every day."
+    "aboutme2LineFour": "new every day.",
+    "Overview":"Overview:The Bookstore Management System is a web application designed to facilitate the management of a bookstore, including user authentication, profile management, and book-related functionalities.",
+    "Overview1":"The system allows users to register and login, view their profile, and manage",
+    "Overview2":"books, including adding, removing, and updating books.",
+    "Technologies Used":"Technologies Used"
   }
