@@ -13,7 +13,7 @@ export default function Aboutme() {
   const pathsNodeListText=document.querySelectorAll("[id*='textPath']")
   const pathsArr=Array.from(pathsNodeList)
   const pathsTextArr=Array.from(pathsNodeListText)
-  const fontSize = window.innerWidth < 600 ? '39px' : '40px';
+  const fontSize = window.innerWidth < 600 ? '37px' : '40px';
   // console.log(pathsTextArr)
   useEffect(() => {
     const handelScroll=()=>{
