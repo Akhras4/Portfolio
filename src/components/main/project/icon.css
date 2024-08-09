@@ -8,16 +8,20 @@
 .icon svg{
     width: 10vmin;
   height: 10vmin;
+  overflow: visible;
 }
 
 .icon .githubIcon{
     width: 7vmin;
     height: 7vmin;
-    overflow: visible;
+    filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0)); /* Initial filter state */
+    transition: filter 0.1s ease-in-out;
 }
 
-.icon #githubIcon :hover,.icon #webIcon{
+.icon #githubIcon :hover,.icon #webIcon :hover{
     cursor: pointer;
+  filter: drop-shadow(0 -2mm 2mm rgb(160, 0, 210));
+
 
 }
 @media screen and (max-width:1200){
