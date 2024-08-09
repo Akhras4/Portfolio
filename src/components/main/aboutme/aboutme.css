@@ -10,10 +10,13 @@
 
 
 }
+.Aboutme svg{
+  height:90vh
+}
 .Aboutme .aboutme-background {
     background-image: url('../../../asset/image/stonewall1.jpeg'); 
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-size: contain;
     background-position: center; 
     background-repeat: repeat; 
