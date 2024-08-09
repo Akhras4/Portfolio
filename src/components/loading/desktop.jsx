@@ -19,7 +19,7 @@ export default function Desktop({props}) {
     <div className='loadingPage'style={{marginTop:'-50px'}}>
        <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1440"
+      width="100vw"
       height='100vh'
       fill="none"
       viewBox="0 0 1440 1024"

@@ -37,7 +37,7 @@
   
 }
   
-  .lightcon #light  {
+ #light  {
     animation: moveLightLight 10ms infinite;
     -webkit-animation: moveLightLight 10ms infinite;
     opacity: 1;

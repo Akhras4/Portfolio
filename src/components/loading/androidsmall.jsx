@@ -20,7 +20,7 @@ export default function Androidsmall({props}) {
     <div className='loadingPage'>
       <svg
           xmlns="http://www.w3.org/2000/svg"
-    width={360}
+    width="100vw"
     height='100vh'
     fill="none"
     {...props}
@@ -435,7 +435,7 @@ export default function Androidsmall({props}) {
             ry="2.315"
           ></ellipse>
         </g>
-        <g id="Hoi" fill="#fff">
+        <g id="HOI" fill="#fff">
           <path
             id="Vector_37"
             d="M200.708 331v-52.364h8.045V331h-8.045zm4.091-61.091c-1.569 0-2.921-.534-4.057-1.602-1.114-1.068-1.671-2.352-1.671-3.852s.557-2.785 1.671-3.853c1.136-1.068 2.488-1.602 4.057-1.602 1.568 0 2.909.534 4.022 1.602 1.137 1.068 1.705 2.353 1.705 3.853s-.568 2.784-1.705 3.852c-1.113 1.068-2.454 1.602-4.022 1.602z"
