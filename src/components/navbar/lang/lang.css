@@ -1,7 +1,4 @@
-.container{
-    
-    
-}
+
 .lang{
     display: inline-block;
     position: relative;
@@ -28,8 +25,14 @@ height: 50%;
     40% { stop-color: #e78ab1; }
     100% { stop-color: #54918c; }
   }
+  @-webkit-keyframes stroke {
+    0% { stop-color: #2c8ee9; }
+    40% { stop-color: #e78ab1; }
+    100% { stop-color: #54918c; }
+  }
   .lang #gradientLang stop {
     animation: stroke 2s infinite linear;
+    -webkit-animation:stroke 2s infinite linear ;
     stop-opacity:1
   }
  

@@ -15,9 +15,15 @@
     60% { stop-color: #2689a7; }
     100% { stop-color: #1030bd; }
   }
+  @-webkit-keyframes light {
+    20% { stop-color: #5570c9; }
+    60% { stop-color: #2689a7; }
+    100% { stop-color: #1030bd; }
+  }
   
   .lightcon #lineGradientLight stop {
     animation: light 2s infinite ;
+    -webkit-animation:light 2s infinite ; ;
     stop-opacity: 1;
   }
   @-webkit-keyframes moveLightLight   {
@@ -78,8 +84,14 @@
     40% { stop-color: #1d0746; }
     100% { stop-color: #816ca7; }
   }
+  @-webkit-keyframes twitch {
+    20% { stop-color: #6441a4; }
+    40% { stop-color: #1d0746; }
+    100% { stop-color: #816ca7; }
+  }
   #icon_twitch stop{
     animation: twitch 3s infinite  alternate-reverse  ;
+    -moz-animation: twitch 3s infinite  alternate-reverse ;
   }
   @keyframes gmail {
     10% { stop-color: #4285f4; }
