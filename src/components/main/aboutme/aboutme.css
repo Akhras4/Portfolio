@@ -50,12 +50,23 @@
   --stop4-opacity: 0;
 }
 
-@keyframes AboutmeText {
+ @keyframes AboutmeText {
     20% { stop-color: #5570c9; }
     60% { stop-color: #2689a7; }
     100% { stop-color: #1030bd; }
   }
+  @-webkit-keyframes AboutmeText{
+    20% { stop-color: #5570c9; }
+    60% { stop-color: #2689a7; }
+    100% { stop-color: #1030bd; }
+  }
+  
   @keyframes AboutmeLight{
+    10% { stop-color: #cf40ad; }
+    40% { stop-color: #fd1baa; }
+    100% { stop-color: #ee23b1; }
+  }
+  @-webkit-keyframes AboutmeLight{
     10% { stop-color: #cf40ad; }
     40% { stop-color: #fd1baa; }
     100% { stop-color: #ee23b1; }
@@ -63,10 +74,12 @@
   
   .Aboutme #lineGradientAboutmeText stop {
     animation: AboutmeText 10ms infinite ;
+    -webkit-animation:AboutmeText 10ms infinite ;
     stop-opacity: 1;
   }
   .Aboutme #lineGradientAboutmeLight stop {
     animation: AboutmeLight 10ms infinite ;
+    -webkit-animation:AboutmeLight 10ms infinite ;
     stop-opacity: 1;
   }
   @-webkit-keyframes moveLightAboutmeLight {
