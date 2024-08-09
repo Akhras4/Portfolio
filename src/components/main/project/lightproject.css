@@ -1,0 +1,37 @@
+@keyframes projectLight{
+    10% { stop-color: #9bd5f6; }
+    40% { stop-color: #1378a7; }
+    100% { stop-color: #e0fbff; }
+  }
+  
+
+  .Lightproject #lineGradientProjectLight stop {
+    animation: projectLight 1s infinite ;
+    stop-opacity: 1;
+  }
+
+@-webkit-keyframes moveLightProjectLight {
+    0% { filter: url(#lightEffectProjectLight) drop-shadow(0 50px 30px rgb(122, 23, 30)); }
+    25% { filter: url(#lightEffectProjectLight) drop-shadow(10px 55px 30px rgb(164, 16, 16)); }
+    50% { filter: url(#lightEffectProjectLight) drop-shadow(0 25px 50px rgb(88, 2, 2)); }
+    75% { filter: url(#lightEffectProjectLight) drop-shadow(10px 15px 30px rgb(191, 80, 91)); }
+    100% { filter: url(#lightEffectProjectLight) drop-shadow(0 50px 30px rgb(128, 5, 5)); }
+  }
+  
+  @keyframes moveLightProjectLight {
+    0% { filter: url(#lightEffectProjectLight) drop-shadow(0 50px 30px rgb(53, 124, 206)); }
+    25% { filter: url(#lightEffectProjectLight) drop-shadow(10px 55px 30px rgb(19, 205, 195)); }
+    50% { filter: url(#lightEffectProjectLight) drop-shadow(0 25px 50px rgb(200, 198, 232)); }
+    75% { filter: url(#lightEffectProjectLight) drop-shadow(10px 15px 30px rgb(19, 205, 195)); }
+    100% { filter: url(#lightEffectProjectLight) drop-shadow(0 50px 30px rgb(102, 166, 203)); }
+  }
+
+.Lightproject rect  {
+    animation: moveLightProjectLight 5s infinite;
+    -webkit-animation: moveLightProjectLight 5s infinite;
+    opacity: 1;
+  }
+  .Lightproject  {
+
+  }
+  

@@ -13,7 +13,7 @@ function App() {
   useEffect(()=>{
     setTimeout(()=>{
       setShow(true)
-    },5000)
+    },50000)
   },[])
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);

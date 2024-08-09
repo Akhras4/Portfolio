@@ -5,7 +5,7 @@ export const animationText=()=>{
     const light  = document.querySelectorAll('[id*="Cloud light"]')
     const dark  = document.querySelectorAll('[id*="Cloud dark"]')
     const stars=document.querySelectorAll('[id*=Ellipse]')
-    const elements=document.querySelectorAll('[id*="Hallo"],[id*="HOI"],[id="Bonjour"],#MERHABA,#Hello','#Hallo_2')
+    const elements=document.querySelectorAll('[id*="Hallo"],[id*="HOI"],[id="Bonjour"],#MERHABA,#Hello','#Hallo_2','#Hoi',"#hoi")
     const sun  = document.querySelectorAll('[id*="Group"]')
     const t1=gsap.timeline({defaults:{ease:"power4.out",duration:0.7} })
     t1.from(light ,{
@@ -32,7 +32,7 @@ export const animationText=()=>{
     text.from(textid, {
         autoAlpha: 1, 
     })
-    if(textid=='#MERHABA'){
+    if(textid =='#MERHABA'){
     text.from(`${textid} path`, {
             stagger:0.1,
             scale:1,

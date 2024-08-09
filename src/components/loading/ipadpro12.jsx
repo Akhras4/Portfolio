@@ -20,7 +20,7 @@ export default function Ipadpro12
     <div className='loadingPage'style={{marginTop:'-100px'}}>
         <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={1024}
+    width="100vw"
     height='100vh'
     fill="none"
     {...props}

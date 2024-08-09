@@ -20,7 +20,7 @@ export default function Between({props}) {
     <div className='loadingPage'>
         <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={615}
+    width="100vw"
      height='100vh'
     fill="none"
     {...props}

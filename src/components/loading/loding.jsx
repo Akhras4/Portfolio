@@ -58,6 +58,6 @@ export default function Loading({props}) {
   } else if (isAndroudMin) {
     return <Androidsmall props={props}  />;
   } else {
-    return <div>loading</div>;
+    return <div>loading . . .</div>;
   }
 }
