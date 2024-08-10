@@ -97,10 +97,14 @@ height:fit-content;
 }
 
 @media screen and (max-width:900px) {
+  .project{
+    width:100%;
+    min-height:400vh;
+    max-height: 100%; 
+  }
     .project .projectGridCon{
         grid-template-areas: "a" "a" "a" "a";
-           min-height: 420vh;
-           gap:0px; 
+        height: 400vh;
                            
       }
         .projectGridCon .cell{

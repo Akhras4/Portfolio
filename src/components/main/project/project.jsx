@@ -83,7 +83,7 @@ export default function Project() {
             <div className='projectGridCon'>
                 <div  ref={projectCell1Ref}>
                 {!isViewCell1 && (
-                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '100vh', width: '40vh',overflow:"hidden" }}>
+                        <div className='cell' style={{ visibility: 'hidden', }}>
                             
                         </div>
                     )}
@@ -124,9 +124,8 @@ export default function Project() {
                     }
                 </div>
                 <div ref={projectCell2Ref}>
-      
                 {!isViewCell2 && (
-                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '90vh', width: '40vh', overflow:"hidden" }}>
+                        <div className='cell' style={{ visibility: 'hidden', }}>
                             
                         </div>
                     )}
@@ -151,8 +150,8 @@ export default function Project() {
                 </div>
                 <div ref={projectCell3Ref}>
                 {!isViewCell3 && (
-                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '90vh', width: '40vh',overflow:"hidden" }}>
-                           
+                        <div className='cell' style={{ visibility: 'hidden', }}>
+                            
                         </div>
                     )}
                     {isViewCell3 && <motion.div
@@ -175,8 +174,8 @@ export default function Project() {
                 </div>
                 <div ref={projectCell4Ref}>
                 {!isViewCell4 && (
-                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '90vh', width: '40vh',overflow:"hidden" }}>
-                           
+                        <div className='cell' style={{ visibility: 'hidden' }}>
+                            
                         </div>
                     )}
                     {isViewCell4 && <motion.div
