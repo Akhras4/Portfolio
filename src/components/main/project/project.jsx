@@ -65,10 +65,12 @@ export default function Project() {
         };
         checkOverflow();
         window.addEventListener('resize', checkOverflow);
+        window.addEventListener('scroll', checkOverflow);
         return () => {
             window.removeEventListener('resize', checkOverflow);
+            window.removeEventListener('scroll', checkOverflow);
         };
-    }, [expanded]);
+    }, [expanded, t]);
 
     const expandOverview = (flag) => {
         setExpanded(flag);
@@ -85,13 +87,13 @@ export default function Project() {
                             
                         </div>
                     )}
-                    {isViewCell1 && <motion.div
+                    {isViewCell1 &&
+                     <motion.div
                         className='cell'
                         id='bookstore'
                         initial={{ x: -100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
-                        
                     >bookstore
                         <div className={`videoProject ${expanded ? 'expanded' : ''}`}>
                             <video width="100%" height="100%" controls>
