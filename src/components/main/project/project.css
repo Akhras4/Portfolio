@@ -99,7 +99,9 @@ height:fit-content;
 @media screen and (max-width:900px) {
     .project .projectGridCon{
         grid-template-areas: "a" "a" "a" "a";
-           min-height: 420vh;                  
+           min-height: 420vh;
+           gap:0px; 
+                           
       }
         .projectGridCon .cell{
                                height: 90vh;
