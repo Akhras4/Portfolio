@@ -4,7 +4,7 @@ import LanguageContext from '../../../context/context'
 import Icon from './icon'
 import './icon.css'
 import Lightproject from './lightproject'
-import { AnimatePresence,motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export default function Project() {
     const { t } = useContext(LanguageContext)
@@ -80,7 +80,11 @@ export default function Project() {
             <Lightproject />
             <div className='projectGridCon'>
                 <div  ref={projectCell1Ref}>
-                <AnimatePresence  initial={false}>
+                {!isViewCell1 && (
+                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '100vh', width: '40vh' }}>
+                            {/* Placeholder for layout purposes */}
+                        </div>
+                    )}
                     {isViewCell1 && <motion.div
                         className='cell'
                         id='bookstore'
@@ -115,12 +119,15 @@ export default function Project() {
 
                         </div>
                     </motion.div>
-                    
                     }
-                    </AnimatePresence>
                 </div>
                 <div ref={projectCell2Ref}>
-                <AnimatePresence  initial={false}>
+      
+                {!isViewCell2 && (
+                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '100vh', width: '40vh' }}>
+                            {/* Placeholder for layout purposes */}
+                        </div>
+                    )}
                     {isViewCell2 && <motion.div
                         className='cell'
                         id='samoptic'
@@ -139,10 +146,13 @@ export default function Project() {
                         </div>
                     </motion.div>
                     }
-                    </AnimatePresence>
                 </div>
                 <div ref={projectCell3Ref}>
-                <AnimatePresence  initial={false}>
+                {!isViewCell3 && (
+                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '100vh', width: '40vh' }}>
+                            {/* Placeholder for layout purposes */}
+                        </div>
+                    )}
                     {isViewCell3 && <motion.div
                         className='cell'
                         id='clothestore'
@@ -160,10 +170,13 @@ export default function Project() {
                         </div>
                     </motion.div>
                     }
-                     </AnimatePresence>
                 </div>
                 <div ref={projectCell4Ref}>
-                <AnimatePresence  initial={false}>
+                {!isViewCell4 && (
+                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '100vh', width: '40vh' }}>
+                            {/* Placeholder for layout purposes */}
+                        </div>
+                    )}
                     {isViewCell4 && <motion.div
                         className='cell'
                         id='cls'
@@ -181,7 +194,6 @@ export default function Project() {
                         </div>
                     </motion.div>
                     }
-                     </AnimatePresence>
                 </div>
             </div>
         </div>
