@@ -81,8 +81,8 @@ export default function Project() {
             <div className='projectGridCon'>
                 <div  ref={projectCell1Ref}>
                 {!isViewCell1 && (
-                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '100vh', width: '40vh' }}>
-                            {/* Placeholder for layout purposes */}
+                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '90vh', width: '40vh' }}>
+                            
                         </div>
                     )}
                     {isViewCell1 && <motion.div
@@ -124,8 +124,8 @@ export default function Project() {
                 <div ref={projectCell2Ref}>
       
                 {!isViewCell2 && (
-                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '100vh', width: '40vh' }}>
-                            {/* Placeholder for layout purposes */}
+                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '90vh', width: '40vh' }}>
+                            
                         </div>
                     )}
                     {isViewCell2 && <motion.div
@@ -149,8 +149,8 @@ export default function Project() {
                 </div>
                 <div ref={projectCell3Ref}>
                 {!isViewCell3 && (
-                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '100vh', width: '40vh' }}>
-                            {/* Placeholder for layout purposes */}
+                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '90vh', width: '40vh' }}>
+                           
                         </div>
                     )}
                     {isViewCell3 && <motion.div
@@ -173,8 +173,8 @@ export default function Project() {
                 </div>
                 <div ref={projectCell4Ref}>
                 {!isViewCell4 && (
-                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '100vh', width: '40vh' }}>
-                            {/* Placeholder for layout purposes */}
+                        <div className='cell-placeholder' style={{ visibility: 'hidden', height: '90vh', width: '40vh' }}>
+                           
                         </div>
                     )}
                     {isViewCell4 && <motion.div
