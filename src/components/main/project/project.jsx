@@ -5,11 +5,13 @@ import Icon from './icon'
 import './icon.css'
 import Lightproject from './lightproject'
 import { motion } from 'framer-motion'
+import useMediaQuery from'../../../customHook/useMediaQuery'
 
 export default function Project() {
     const { t } = useContext(LanguageContext)
     const [isOverflowing, setIsOverflowing] = useState(false);
     const [expanded, setExpanded] = useState(false);
+    const isMediumScreen = useMediaQuery('(max-width: 900px)')
     const overviewRef = useRef(null);
     const projectCell1Ref = useRef(null);
     const projectCell2Ref = useRef(null);
@@ -94,6 +96,7 @@ export default function Project() {
                         initial={{ x: -100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
+                        
                     >bookstore
                         <div className={`videoProject ${expanded ? 'expanded' : ''}`}>
                             <video width="100%" height="100%" controls>
@@ -132,7 +135,7 @@ export default function Project() {
                     {isViewCell2 && <motion.div
                         className='cell'
                         id='samoptic'
-                        initial={{ x: 100, opacity: 0 }}
+                        initial={{ x: isMediumScreen ?  -100 :100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
                 
@@ -181,7 +184,7 @@ export default function Project() {
                     {isViewCell4 && <motion.div
                         className='cell'
                         id='cls'
-                        initial={{ x: 100, opacity: 0 }}
+                        initial={{ x: isMediumScreen ? -100 : 100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
 

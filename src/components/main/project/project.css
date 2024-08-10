@@ -16,6 +16,7 @@
                          "a a";
                          gap:2rem;
                          height: 200vh;
+                         position: relative;
                          
 }
 .projectGridCon .cell{
@@ -27,6 +28,7 @@
     border: 5px solid white;
     border-radius: 15px;
     position: relative;
+    overflow: hidden;
 }
 .videoProject,.videoProject{
     height: 45%;
@@ -99,12 +101,13 @@ height:fit-content;
 @media screen and (max-width:900px) {
   .project{
     width:100%;
-    min-height:400vh;
+    min-height:420vh;
     max-height: 100%; 
   }
     .project .projectGridCon{
         grid-template-areas: "a" "a" "a" "a";
         height: 400vh;
+        gap:0px
                            
       }
         .projectGridCon .cell{
