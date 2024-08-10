@@ -8,6 +8,7 @@
     align-items: center;
     background: linear-gradient(to bottom,#000000,#020c1b, #020E1F, #000000);
 }
+
 .project .projectGridCon{
     margin-top: 4rem ;
     display:grid;

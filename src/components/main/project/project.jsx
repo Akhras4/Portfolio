@@ -4,7 +4,7 @@ import LanguageContext from '../../../context/context'
 import Icon from './icon'
 import './icon.css'
 import Lightproject from './lightproject'
-import { motion } from 'framer-motion'
+import { AnimatePresence,motion } from 'framer-motion'
 
 export default function Project() {
     const { t } = useContext(LanguageContext)
@@ -79,98 +79,109 @@ export default function Project() {
         <div className='project' >
             <Lightproject />
             <div className='projectGridCon'>
-                <div ref={projectCell1Ref}>
-               {isViewCell1 &&  <motion.div 
-                 className='cell'
-                  id='bookstore'
-                  initial={{x: -100, opacity: 0 }}
-                  animate={ {x: 0, opacity: 1 }}
-                  transition={{duration: 0.5, delay: 0.5 }}
-                  >bookstore
-                    <div className={`videoProject ${expanded ? 'expanded' : ''}`}>
-                    <video width="100%" height="100%" controls>
-                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div className={`aboutProject ${expanded ? 'expanded' : ''}`}>
-                        <div className='head'><h1>Bookstore</h1> <Icon /></div>
-                        <div
-                            className={`overview ${expanded ? 'expanded' : ''}`}
-                            ref={overviewRef}
-                            style={{
-                                overflow: expanded ? 'visible' : 'hidden',
-                                position: 'relative',
-                            }}> <h2 id='overview' >{t('Overview')}{t('Overview1')}{t('Overview2')}</h2>
-                            {isOverflowing && !expanded ? (
-                                <div className="see-more" onClick={() => expandOverview(true)}>
-                                    See More
-                                </div>
-                            ) : (<div className="see-more" onClick={() => expandOverview(false)}>
-                                See less
-                            </div>)}</div>
-                        <h2 className='techno'>{t('Technologies Used')}:</h2>
+                <div  ref={projectCell1Ref}>
+                <AnimatePresence  initial={false}>
+                    {isViewCell1 && <motion.div
+                        className='cell'
+                        id='bookstore'
+                        initial={{ x: -100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 0.5 }}
+                        
+                    >bookstore
+                        <div className={`videoProject ${expanded ? 'expanded' : ''}`}>
+                            <video width="100%" height="100%" controls>
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div className={`aboutProject ${expanded ? 'expanded' : ''}`}>
+                            <div className='head'><h1>Bookstore</h1> <Icon /></div>
+                            <div
+                                className={`overview ${expanded ? 'expanded' : ''}`}
+                                ref={overviewRef}
+                                style={{
+                                    overflow: expanded ? 'visible' : 'hidden',
+                                    position: 'relative',
+                                }}> <h2 id='overview' >{t('Overview')}{t('Overview1')}{t('Overview2')}</h2>
+                                {isOverflowing && !expanded ? (
+                                    <div className="see-more" onClick={() => expandOverview(true)}>
+                                        See More
+                                    </div>
+                                ) : (<div className="see-more" onClick={() => expandOverview(false)}>
+                                    See less
+                                </div>)}</div>
+                            <h2 className='techno'>{t('Technologies Used')}:</h2>
 
-                    </div>
-                </motion.div>
-}
+                        </div>
+                    </motion.div>
+                    
+                    }
+                    </AnimatePresence>
                 </div>
                 <div ref={projectCell2Ref}>
-               {isViewCell2 &&  <motion.div 
-                 className='cell'
-                  id='samoptic'
-                  initial={{x: 100, opacity: 0 }}
-                  animate={ {x: 0, opacity: 1 }}
-                  transition={{duration: 0.5, delay: 0.5 }}
+                <AnimatePresence  initial={false}>
+                    {isViewCell2 && <motion.div
+                        className='cell'
+                        id='samoptic'
+                        initial={{ x: 100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 0.5 }}
+                
 
-                  >samOptic
-                    <div className='videoProject'></div>
-                    <div className='aboutProject'>
+                    >samOptic
+                        <div className='videoProject'></div>
+                        <div className='aboutProject'>
 
-                        <div className='head'><h1>samOptic</h1></div>
-                        <h2>Overview</h2>
+                            <div className='head'><h1>samOptic</h1></div>
+                            <h2>Overview</h2>
 
-                    </div>
-                </motion.div>
-}                
+                        </div>
+                    </motion.div>
+                    }
+                    </AnimatePresence>
                 </div>
                 <div ref={projectCell3Ref}>
-               {isViewCell3 &&  <motion.div 
-                 className='cell'
-                  id='clothestore'
-                  initial={{x: -100, opacity: 0 }}
-                  animate={ {x: 0, opacity: 1 }}
-                  transition={{duration: 0.5, delay: 0.5 }}
+                <AnimatePresence  initial={false}>
+                    {isViewCell3 && <motion.div
+                        className='cell'
+                        id='clothestore'
+                        initial={{ x: -100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 0.5 }}
 
-                  >clothestore
-                    <div className='videoProject'></div>
-                    <div className='aboutProject'>
-                        <hgroup>
-                            <h1>clothestore</h1>
-                            <h2>Overview</h2>
-                        </hgroup>
-                    </div>
-                </motion.div>
-}
+                    >clothestore
+                        <div className='videoProject'></div>
+                        <div className='aboutProject'>
+                            <hgroup>
+                                <h1>clothestore</h1>
+                                <h2>Overview</h2>
+                            </hgroup>
+                        </div>
+                    </motion.div>
+                    }
+                     </AnimatePresence>
                 </div>
                 <div ref={projectCell4Ref}>
-               {isViewCell4 &&  <motion.div 
-                 className='cell'
-                  id='cls'
-                  initial={{x: 100, opacity: 0 }}
-                  animate={ {x: 0, opacity: 1 }}
-                  transition={{duration: 0.5, delay: 0.5 }}
+                <AnimatePresence  initial={false}>
+                    {isViewCell4 && <motion.div
+                        className='cell'
+                        id='cls'
+                        initial={{ x: 100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 0.5 }}
 
-                  >clothestore
-                    <div className='videoProject'></div>
-                    <div className='aboutProject'>
-                        <hgroup>
-                            <h1>clothestore</h1>
-                            <h2>Overview</h2>
-                        </hgroup>
-                    </div>
+                    >clothestore
+                        <div className='videoProject'></div>
+                        <div className='aboutProject'>
+                            <hgroup>
+                                <h1>clothestore</h1>
+                                <h2>Overview</h2>
+                            </hgroup>
+                        </div>
                     </motion.div>
-}
+                    }
+                     </AnimatePresence>
                 </div>
             </div>
         </div>
