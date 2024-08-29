@@ -11,6 +11,7 @@ function App() {
   const[show,setShow]=useState(false)
   const{t}=useTranslation()
   useEffect(()=>{
+   
     setTimeout(()=>{
       setShow(true)
     },9000)
@@ -21,9 +22,7 @@ function App() {
   return (
     <div className="App">
       <LanguageContext.Provider value={{ changeLanguage, t }} >
-      <nav>
-      <Navbar />
-      </nav>
+      
       {!show ?
       <Loading /> : (
            <Main />

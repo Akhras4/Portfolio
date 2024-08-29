@@ -7,7 +7,8 @@
 }
 .lightcon svg{
     overflow: visible !important;
-    width: 60vw;
+    width: 35vw;
+    max-width: 80vw;
     height: 100%;
 }
 @keyframes light {
@@ -62,8 +63,10 @@
 
   }
   .contactbar svg {
-    width: 10vw;
+    width: 7vw;
+    max-width: 10vw;
     height: 7vw;
+    max-height: 7vh;
     overflow: visible;
     transition: transform 0.3s;
   }
@@ -105,8 +108,5 @@
     animation: gmail 3s infinite  alternate-reverse both ;
   }
   @media  screen and (min-width:1000px) {
-    .contactbar svg {
-        width: 14vw;
-        height: 5vw;
-      }
+  
   }
