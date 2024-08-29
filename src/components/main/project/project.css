@@ -65,19 +65,22 @@
     overflow: hidden; 
     height: 40%; 
   }
-  .overview.expanded {
+.overview.expanded {
     flex: 1; 
-    height: auto;
-  }
-  .overview.expanded #overview {
+    height: 100%;
+    overflow-y: scroll !important;
+    
+}
+.overview.expanded #overview {
     -webkit-line-clamp: unset;
-  }
-  .aboutProject.expanded {
+}
+.aboutProject.expanded {
      border:none;
     transform: translateY(-40%);
     transition: transform 0.3s ease;
-  }
-  .see-more {
+   
+}
+.see-more {
     position: absolute;
     bottom: -7px;
     right: 0px;
@@ -87,7 +90,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     padding: 5px;
     border-radius: 5px;
-  }
+}
 .project .head{
 display: flex; 
 flex-direction: row;
@@ -124,5 +127,8 @@ height:fit-content;
         border:none;
          transform: translateY(-100%);
        }
+}
+@media screen and (min-width:1400px) {
+   
 }
 

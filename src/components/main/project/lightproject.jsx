@@ -52,7 +52,7 @@ if (refProject.current){
                 </filter> 
                    
               </defs>
-      <g id="Frame 1">
+      <g id="Frame1">
         <path
           fill="none"
           d="M0 0H764V691H0z"

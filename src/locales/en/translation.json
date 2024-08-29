@@ -15,8 +15,8 @@
     "aboutme2LineTwo": "a Full Stack Developer because I truly enjoy",
     "aboutme2LineThree": "writing code and continue to learn something",
     "aboutme2LineFour": "new every day.",
-    "Overview":"Overview:The Bookstore Management System is a web application designed to facilitate the management of a bookstore, including user authentication, profile management, and book-related functionalities.",
-    "Overview1":"The system allows users to register and login, view their profile, and manage",
-    "Overview2":"books, including adding, removing, and updating books.",
-    "Technologies Used":"Technologies Used"
+    "Overview":"Project Overview: Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",
+    "Overview1":"Custom Navigation Bar: Implemented a sophisticated navigation bar with hidden dropdown menus that reveal additional content when hovered over. This feature allows users to explore various sections of the site effortlessly without disrupting the main layout.",
+    "Overview2":"Dynamic Content Sections: The application dynamically displays content related to business challenges and solutions, helping users easily access information about topics like digital transformation, e-commerce, and digital marketing strategies.",
+    "Technologies Used":"Technologies Used:Frontend: TypeScript React Tailwind CSSAnimation "
   }
