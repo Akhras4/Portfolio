@@ -4,7 +4,7 @@ function Light() {
 
 
   return (
-    <div>
+    <div className="contact">
     <div className="lightcon">
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -15,8 +15,103 @@
     "aboutme2LineTwo": "a Full Stack Developer because I truly enjoy",
     "aboutme2LineThree": "writing code and continue to learn something",
     "aboutme2LineFour": "new every day.",
-    "Overview":"Project Overview: Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",
-    "Overview1":"Custom Navigation Bar: Implemented a sophisticated navigation bar with hidden dropdown menus that reveal additional content when hovered over. This feature allows users to explore various sections of the site effortlessly without disrupting the main layout.",
-    "Overview2":"Dynamic Content Sections: The application dynamically displays content related to business challenges and solutions, helping users easily access information about topics like digital transformation, e-commerce, and digital marketing strategies.",
-    "Technologies Used":"Technologies Used:Frontend: TypeScript React Tailwind CSSAnimation "
+
+    "Project": {
+      "ProjectOne": {
+      "Overview": [
+        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",
+        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.", 
+        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",  
+        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",
+        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions." 
+      ],
+      "TechnologiesUsed": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "HTML/CSS",
+        "JavaScript",
+        "Bootstrap",
+        "Material-UI",
+        "Redux",
+        "React Router",
+        "Axios",
+        "MongoDB Atlas",
+        "Heroku"
+      ]
+    },
+    "ProjectTwo": {
+      "Overview": [
+        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",
+        "SAD", 
+        "AASD",  
+        "ASD", 
+        "ASD"  
+      ],
+      "TechnologiesUsed": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "HTML/CSS",
+        "JavaScript",
+        "Bootstrap",
+        "Material-UI",
+        "Redux",
+        "React Router",
+        "Axios",
+        "MongoDB Atlas",
+        "Heroku"
+      ]
+    },
+    "ProjectThree": {
+      "Overview": [
+        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",
+        "SAD", 
+        "AASD",  
+        "ASD", 
+        "ASD"  
+      ],
+      "TechnologiesUsed": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "HTML/CSS",
+        "JavaScript",
+        "Bootstrap",
+        "Material-UI",
+        "Redux",
+        "React Router",
+        "Axios",
+        "MongoDB Atlas",
+        "Heroku"
+      ]
+    },
+    "ProjectFour": {
+      "Overview": [
+        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",
+        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.", 
+        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",  
+        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.", 
+        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions."  
+      ],
+      "TechnologiesUsed": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "HTML/CSS",
+        "JavaScript",
+        "Bootstrap",
+        "Material-UI",
+        "Redux",
+        "React Router",
+        "Axios",
+        "MongoDB Atlas",
+        "Heroku"
+      ]
+    }
+  }
   }
