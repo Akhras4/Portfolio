@@ -1,9 +1,10 @@
 import React from 'react'
+import './icon.css'
+export default function Icon({githubLink,websiteLink}) {
 
-export default function Icon() {
   return (
-    <div className='icon'>
-      <div id='githubIcon'>
+    <div id='icon'>
+      <a href={githubLink}><div id='githubIcon' >
        <svg className='githubIcon'  viewBox="0 -2 97.707 97.707" xmlns="http://www.w3.org/2000/svg">
        <g>
       <path
@@ -18,6 +19,8 @@ export default function Icon() {
       </g>
     </svg>
     </div>
+    </a>
+    <a href={websiteLink}><div id='websiteIcon' >
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="72"
@@ -65,6 +68,8 @@ export default function Icon() {
           />
         </g>
         </svg>
+        </div>
+        </a>
     </div>
   )
 }

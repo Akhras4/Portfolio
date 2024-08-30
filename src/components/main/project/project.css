@@ -1,7 +1,6 @@
 .project{
     width:100%;
-    min-height:200vh;
-    max-height: 100%; 
+    min-height:fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,11 +23,13 @@
     display: flex;
     flex-direction: column;
     height: 90vh;
+    min-height: 90vh;
     width: 80vh;
     border: 5px solid white;
     border-radius: 15px;
-    position: relative;
     overflow: hidden;
+    margin-bottom: 1rem;
+    position: relative;
 }
 .videoProject,.videoProject{
     height: 45%;
@@ -46,38 +47,52 @@
     padding:5px 5px 5px 5px;
     transition: transform 0.4s ease;
     margin-top: 4px;
+    overflow: hidden;
 }
 #overview{
-    font-size: clamp(1rem, 1.5vw, 2rem);
-    position: relative; /* Position relative to handle absolute positioning of "See More" */
-    display: -webkit-box;        /* Necessary for line-clamp to work */
-    -webkit-box-orient: vertical; /* Specifies the orientation of the box */
-    -webkit-line-clamp: 3;       /* Limits the text to 3 lines */
-    overflow: hidden;            /* Hides the overflowing text */
-    text-overflow: ellipsis; 
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 7;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    line-height: 1.5;
+    position: relative; 
 }
+
  .techno {
     height:  20%;
      font-size: clamp(1.2rem, 1.7vw, 2.3rem); 
     margin-bottom: 1rem;
 }
 .overview {
-    overflow: hidden; 
-    height: 40%; 
+    font-size: 1rem;
+    height: 70%;
+    
   }
-.overview.expanded {
+.overview.expanded  {
     flex: 1; 
     height: 100%;
     overflow-y: scroll !important;
-    
+    padding-bottom: 1rem;
 }
-.overview.expanded #overview {
+.overview.expanded  {
+    height: 100%;
+    line-clamp:unset;
     -webkit-line-clamp: unset;
 }
+.expanded p:not(.par4){
+    margin-bottom: 1rem;
+}
+.par4{
+    margin-bottom: 7rem;
+}
+
 .aboutProject.expanded {
      border:none;
+     height: 100%;
     transform: translateY(-40%);
-    transition: transform 0.3s ease;
+    transition: transform 0.6s  ease-in-out;
    
 }
 .see-more {
@@ -100,6 +115,13 @@ height:fit-content;
 .project .head h1{
     font-size: clamp(1.2rem, 2vw, 2.3rem); 
 }
+@media screen and (max-width:1100px) {
+    .aboutProject.expanded {
+        margin-bottom: -30vh;
+        }
+
+}
+
 
 @media screen and (max-width:900px) {
   .project{
@@ -119,16 +141,23 @@ height:fit-content;
                             }
         .aboutProject.expanded {
                                border:none;
+                               overflow: hidden;
+                               height: fit-content;
+                               margin-bottom: -30vh;
                                }
+                        
+                               .overview.expanded p{
+                                height: 100%; 
+                                
+                            }
+                            
 }
 
 @media screen and (max-width:400px) {
     .aboutProject.expanded {
         border:none;
-         transform: translateY(-100%);
+         transform: translateY(-20%);
        }
 }
-@media screen and (min-width:1400px) {
-   
-}
+
 

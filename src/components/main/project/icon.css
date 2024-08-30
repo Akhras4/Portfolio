@@ -1,36 +1,36 @@
-.icon{
-    display: flex;
-    flex-direction: row;
+#icon{
+    display: flex !important;
+    flex-direction: row !important;
     align-items: center;
     flex-wrap: nowrap;
     gap:5px;
 }
-.icon svg{
+#icon svg{
     width: 10vmin;
   height: 10vmin;
   overflow: visible;
 }
 
-.icon .githubIcon{
+#icon .githubIcon{
     width: 7vmin;
     height: 7vmin;
     filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0)); /* Initial filter state */
     transition: filter 0.1s ease-in-out;
 }
 
-.icon #githubIcon :hover,.icon #webIcon :hover{
+#icon #githubIcon :hover,#icon #websiteIcon :hover{
     cursor: pointer;
   filter: drop-shadow(0 -2mm 2mm rgb(160, 0, 210));
 
 
 }
 @media screen and (max-width:1200){
-    .icon svg{
+    #icon svg{
         width: 13vmin;
       height: 13vmin;
     }
     
-    .icon .githubIcon{
+    #icon .githubIcon{
         width: 10vmin;
         height: 8vmin;
         overflow: visible;
