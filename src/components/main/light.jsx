@@ -84,6 +84,7 @@ function Light() {
     </svg>
     </div>
     <div className="contactbar">
+    <a href="https://github.com/Akhras4" target="_blank">
    <svg 
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 97.707 97.707"
@@ -100,7 +101,8 @@ function Light() {
       ></path>
       </g>
     </svg>
-
+    </a>
+    <a href="mailto:abdoakhras4@gmail.com" target="_blank">
     <svg 
       xmlns="http://www.w3.org/2000/svg"
       viewBox="50 30 100 100"
@@ -115,14 +117,17 @@ function Light() {
                       <stop offset="100%" />
                   </linearGradient>
         </defs>
-    <g>
-      <path stroke="url(#icon_gmail)" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6"></path>
-      <path fill="url(#icon_gmail)" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15"></path>
-      <path fill="url(#icon_gmail)" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2"></path>
-      <path fill="url(#icon_gmail)" d="M72 74V48l24 18 24-18v26L96 92"></path>
-      <path stroke="url(#icon_gmail)" d="M52 51v8l20 15V48l-5.6-4.2C60.46 39.35 52 43.58 52 51"></path>
-    </g>    
+            <g>
+              <path stroke="url(#icon_gmail)" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6"></path>
+              <path fill="url(#icon_gmail)" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15"></path>
+              <path fill="url(#icon_gmail)" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2"></path>
+              <path fill="url(#icon_gmail)" d="M72 74V48l24 18 24-18v26L96 92"></path>
+              <path stroke="url(#icon_gmail)" d="M52 51v8l20 15V48l-5.6-4.2C60.46 39.35 52 43.58 52 51"></path>
+          </g> 
+        
     </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/abdulrahman-akhras-b2b142161" target="_blank"> 
     <svg 
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 2 24 24"
@@ -135,6 +140,8 @@ function Light() {
       />
     </g>
     </svg>
+    </a>
+    <a href="https://github.com/Akhras4" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="35 5 50 50" >
     <defs>
         <linearGradient id="icon_twitch"  x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="ak(1 0 0 -1 0 55.8028)">
@@ -150,6 +157,8 @@ function Light() {
       ></path>
       </g>
     </svg>
+    </a>
+    <a href="https://github.com/Akhras4" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="30 5 54 54" fill="none">
       <g>
       <path
@@ -159,6 +168,7 @@ function Light() {
       ></path>
       </g>
     </svg>
+    </a>
     </div>
     </div>
   );

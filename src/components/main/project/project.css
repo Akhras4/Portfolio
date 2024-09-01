@@ -146,9 +146,8 @@ height:fit-content;
                                margin-bottom: -30vh;
                                }
                         
-                               .overview.expanded p{
-                                height: 100%; 
-                                
+                               .par4{
+                                margin-bottom: 9rem;
                             }
                             
 }

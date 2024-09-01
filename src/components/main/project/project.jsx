@@ -6,6 +6,8 @@ import Lightproject from './lightproject';
 import useMediaQuery from '../../../customHook/useMediaQuery';
 import kracht from '../../../asset/video/kracht.webm';
 import samoptic from '../../../asset/video/samoptic.webm';
+import bookstore from '../../../asset/video/book-store.mp4'
+import todo from '../../../asset/video/todo.webm'
 import ProjectCell from './ProjectCell';
 
 export default function Project() {
@@ -37,30 +39,30 @@ export default function Project() {
         {
             title: 'kracht',
             videoSrc: kracht,
-            githubLink: '',
-            websiteLink: '',
-            overview: t('Project.ProjectOne.Overview', { returnObjects: true })  // Ensure returnObjects: true
+            githubLink: 'https://github.com/Akhras4/website-kracht.git',
+            websiteLink: 'https://kracht.netlify.app',
+            overview: t('Project.ProjectOne.Overview', { returnObjects: true })  
         },
         {
             title: 'samOptic',
             videoSrc: samoptic,
-            githubLink: '',
+            githubLink: 'https://github.com/Akhras4/sham-sunglass.git',
             websiteLink: '',
-            overview: t('Project.ProjectTwo.Overview', { returnObjects: true })  // Ensure returnObjects: true
+            overview: t('Project.ProjectTwo.Overview', { returnObjects: true }) 
         },
         {
-            title: 'clothestore',
-            videoSrc: null,
-            githubLink: '',
-            websiteLink: '',
-            overview: t('Project.ProjectThree.Overview', { returnObjects: true })  // Ensure returnObjects: true
+            title: 'Bookstore Management System',
+            videoSrc: bookstore,
+            githubLink: 'https://github.com/Akhras4/Bookstore-Management-System-main.git',
+            websiteLink: 'https://bookstore-management-system-book.up.railway.app/login',
+            overview: t('Project.ProjectThree.Overview', { returnObjects: true })  
         },
         {
-            title: 'clothestore',
-            videoSrc: null,
-            githubLink: '',
-            websiteLink: '',
-            overview: t('Project.ProjectFour.Overview', { returnObjects: true })  // Ensure returnObjects: true
+            title: 'To Do and more',
+            videoSrc: todo,
+            githubLink: 'https://github.com/Akhras4/todo.git',
+            websiteLink: 'https://akhras4.netlify.app',
+            overview: t('Project.ProjectFour.Overview', { returnObjects: true }) 
         }
     ];
 

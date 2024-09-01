@@ -4,7 +4,7 @@ export default function Icon({githubLink,websiteLink}) {
 
   return (
     <div id='icon'>
-      <a href={githubLink}><div id='githubIcon' >
+      <a href={githubLink} target="_blank"><div id='githubIcon'   >
        <svg className='githubIcon'  viewBox="0 -2 97.707 97.707" xmlns="http://www.w3.org/2000/svg">
        <g>
       <path
@@ -20,7 +20,7 @@ export default function Icon({githubLink,websiteLink}) {
     </svg>
     </div>
     </a>
-    <a href={websiteLink}><div id='websiteIcon' >
+    <a href={websiteLink} target="_blank"><div id='websiteIcon'  >
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="72"
