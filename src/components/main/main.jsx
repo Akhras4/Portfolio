@@ -13,7 +13,6 @@ export default function Main() {
       <Navbar />
       </nav>
       <Welcome />
-      
       <Aboutme />
       <Project />
       <Light />

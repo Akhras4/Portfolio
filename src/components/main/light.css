@@ -1,129 +1,229 @@
-.contact{
-  margin-bottom: 15rem;
+.contact {
+  margin-bottom: 10rem;
   height: 30vh;
 }
 
 .lightcon {
-    height: fit-content;
-    display: flex;
-    justify-content:center;
-    align-content: center;
-   
-    
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+
 }
-.lightcon svg{
-    overflow: visible !important;
-    width: 55vw;
-    max-width: 80vw;
-    height: 100%;
+
+.lightcon svg {
+  overflow: visible !important;
+  width: 55vw;
+  max-width: 80vw;
+  height: 100%;
 }
+
 @keyframes light {
-    20% { stop-color: #5570c9; }
-    60% { stop-color: #2689a7; }
-    100% { stop-color: #1030bd; }
+  20% {
+    stop-color: #5570c9;
   }
-  @-webkit-keyframes light {
-    20% { stop-color: #5570c9; }
-    60% { stop-color: #2689a7; }
-    100% { stop-color: #1030bd; }
+
+  60% {
+    stop-color: #2689a7;
   }
-  
-  .lightcon #lineGradientLight stop {
-    animation: light 2s infinite ;
-    -webkit-animation:light 2s infinite ; ;
-    stop-opacity: 1;
+
+  100% {
+    stop-color: #1030bd;
   }
-  @-webkit-keyframes moveLightLight   {
-        0% { filter: url(#lightEffectLight) drop-shadow(0 50px 30px rgb(20, 160, 220)) ; }
-        25% { filter: url(#lightEffectLight) drop-shadow(10px 55px 30px #ffffff); }
-        50% { filter: url(#lightEffectLight) drop-shadow(0 25px 50px #ffffff); }
-        75% { filter: url(#lightEffectLight) drop-shadow(10px 15px 30px 8EBEF3); }
-        100% { filter: url(#lightEffectLight) drop-shadow(0 50px 30px #ffffff); }
-      
-  }
-  @keyframes moveLightLight {
-    0% { filter: url(#lightEffectLight) drop-shadow(0 50px 30px rgb(20, 160, 220)) ; }
-    25% { filter: url(#lightEffectLight) drop-shadow(10px 55px 30px #ffffff); }
-    50% { filter: url(#lightEffectLight) drop-shadow(0 25px 50px #ffffff); }
-    75% { filter: url(#lightEffectLight) drop-shadow(10px 15px 30px 8EBEF3); }
-    100% { filter: url(#lightEffectLight) drop-shadow(0 50px 30px #ffffff); }
-  
 }
-  
- #light  {
-    animation: moveLightLight 10ms infinite;
-    -webkit-animation: moveLightLight 10ms infinite;
-    opacity: 1;
-  }
-  .contactbar {
-    display: flex;
-    justify-content:center;
-    align-content: center;
-    width: 100%;
-         height: 100%;
 
-    gap:1rem
+@-webkit-keyframes light {
+  20% {
+    stop-color: #5570c9;
   }
-  .contactbar > * {
-    cursor: pointer;
 
+  60% {
+    stop-color: #2689a7;
   }
-  .contactbar svg {
-    width: 7vw;
-    max-width: 10vw;
-    height: 7vw;
-    max-height: 7vh;
-    overflow: visible;
-    transition: transform 0.3s;
+
+  100% {
+    stop-color: #1030bd;
   }
-  .contactbar svg:hover {
-    transform: scale(1.5);
-& g{
+}
+
+.lightcon #lineGradientLight stop {
+  animation: light 2s infinite;
+  -webkit-animation: light 2s infinite;
+  ;
+  stop-opacity: 1;
+}
+
+@-webkit-keyframes moveLightLight {
+  0% {
+    filter: url(#lightEffectLight) drop-shadow(0 50px 30px rgb(20, 160, 220));
+  }
+
+  25% {
+    filter: url(#lightEffectLight) drop-shadow(10px 55px 30px #ffffff);
+  }
+
+  50% {
+    filter: url(#lightEffectLight) drop-shadow(0 25px 50px #ffffff);
+  }
+
+  75% {
+    filter: url(#lightEffectLight) drop-shadow(10px 15px 30px 8EBEF3);
+  }
+
+  100% {
+    filter: url(#lightEffectLight) drop-shadow(0 50px 30px #ffffff);
+  }
+
+}
+
+@keyframes moveLightLight {
+  0% {
+    filter: url(#lightEffectLight) drop-shadow(0 50px 30px rgb(20, 160, 220));
+  }
+
+  25% {
+    filter: url(#lightEffectLight) drop-shadow(10px 55px 30px #ffffff);
+  }
+
+  50% {
+    filter: url(#lightEffectLight) drop-shadow(0 25px 50px #ffffff);
+  }
+
+  75% {
+    filter: url(#lightEffectLight) drop-shadow(10px 15px 30px 8EBEF3);
+  }
+
+  100% {
+    filter: url(#lightEffectLight) drop-shadow(0 50px 30px #ffffff);
+  }
+
+}
+
+#light {
+  animation: moveLightLight 10ms infinite;
+  -webkit-animation: moveLightLight 10ms infinite;
+  opacity: 1;
+}
+
+.contactbar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+
+  gap: 1rem
+}
+
+.contactbar>* {
+  cursor: pointer;
+
+}
+
+.contactbar svg {
+  width: 7vw;
+  max-width: 10vw;
+  height: 7vw;
+  max-height: 7vh;
+  overflow: visible;
+  transition: transform 0.3s;
+}
+
+.contactbar svg:hover {
+  transform: scale(1.5);
+
+  & g {
     filter: drop-shadow(0 -6mm 4mm rgb(78, 127, 234));
     -webkit-filter: drop-shadow(0 -6mm 4mm rgb(78, 127, 234))
+  }
+
+
+
+
+
 }
-  
 
-        
+@keyframes twitch {
+  20% {
+    stop-color: #6441a4;
+  }
 
+  40% {
+    stop-color: #1d0746;
+  }
 
+  100% {
+    stop-color: #816ca7;
   }
-  @keyframes twitch {
-    20% { stop-color: #6441a4; }
-    40% { stop-color: #1d0746; }
-    100% { stop-color: #816ca7; }
+}
+
+@-webkit-keyframes twitch {
+  20% {
+    stop-color: #6441a4;
   }
-  @-webkit-keyframes twitch {
-    20% { stop-color: #6441a4; }
-    40% { stop-color: #1d0746; }
-    100% { stop-color: #816ca7; }
+
+  40% {
+    stop-color: #1d0746;
   }
-  #icon_twitch stop{
-    animation: twitch 3s infinite  alternate-reverse  ;
-    -moz-animation: twitch 3s infinite  alternate-reverse ;
+
+  100% {
+    stop-color: #816ca7;
   }
-  @keyframes gmail {
-    10% { stop-color: #4285f4; }
-    20% { stop-color: #34a853; }
-    40% { stop-color: #fbbc04; }
-    60% { stop-color: #ea4335; }
-    80% { stop-color: #ea4335; }
-    100% { stop-color: #83947d; }
+}
+
+#icon_twitch stop {
+  animation: twitch 3s infinite alternate-reverse;
+  -moz-animation: twitch 3s infinite alternate-reverse;
+}
+
+@keyframes gmail {
+  10% {
+    stop-color: #4285f4;
   }
-  #icon_gmail stop{
-    animation: gmail 3s infinite  alternate-reverse both ;
+
+  20% {
+    stop-color: #34a853;
   }
-  @media  screen and (min-width:1000px) {
-    .lightcon svg{
-      width: 55vw;
+
+  40% {
+    stop-color: #fbbc04;
   }
+
+  60% {
+    stop-color: #ea4335;
   }
-  @media  screen and (max-width:1000px) {
-    .lightcon svg{
-      width: 75vw;
+
+  80% {
+    stop-color: #ea4335;
+  }
+
+  100% {
+    stop-color: #83947d;
+  }
+}
+
+#icon_gmail stop {
+  animation: gmail 3s infinite alternate-reverse both;
+}
+
+@media screen and (min-width:1000px) {
+  .lightcon svg {
+    width: 55vw;
   }
   .contactbar svg {
-    width: 10vw;
-    height: 7vw;
+    width: 15vw;
+    height: 17vw;
   }
+}
+
+@media screen and (max-width:1000px) {
+  .lightcon svg {
+    width: 75vw;
   }
+
+  .contactbar svg {
+    width: 20vw;
+    height: 13vw;
+  }
+}

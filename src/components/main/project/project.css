@@ -1,100 +1,121 @@
-.project{
-    width:100%;
-    min-height:fit-content;
+.project {
+    width: 100%;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom,#000000,#020c1b, #020E1F, #000000);
+    background: linear-gradient(to bottom, #000000, #020c1b, #020E1F, #000000);
 }
 
-.project .projectGridCon{
-    margin-top: 4rem ;
-    display:grid;
+.project .projectGridCon {
+    margin-top: 4rem;
+    display: grid;
     grid-template-areas: "a a"
-                         "a a";
-                         gap:2rem;
-                         height: 200vh;
-                         position: relative;
-                         
+        "a a";
+    gap: 2rem;
+    height: 200vh;
+    position: relative;
+
 }
-.projectGridCon .cell{
+
+.projectGridCon .cell {
     background-color: white;
     display: flex;
     flex-direction: column;
     height: 90vh;
     min-height: 90vh;
     width: 80vh;
+
     border: 5px solid white;
     border-radius: 15px;
     overflow: hidden;
     margin-bottom: 1rem;
     position: relative;
 }
-.videoProject,.videoProject{
+
+.videoProject,
+.videoProject {
     height: 45%;
     background-color: black;
     border-radius: 15px;
 }
+
 .videoProject * {
-  border-radius: 15px;
+    border-radius: 15px;
 }
-.aboutProject{
+
+.aboutProject {
     height: 45%;
     background-color: white;
     border: 2px solid black;
     border-radius: 10px;
-    padding:5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
     transition: transform 0.4s ease;
     margin-top: 4px;
     overflow: hidden;
 }
-#overview{
-    font-size: 1rem;
+
+#overview {
+    font-size: clamp(1rem,2rem,5rem);
     text-overflow: ellipsis;
     display: -webkit-box;
     line-clamp: 7;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     line-height: 1.5;
-    position: relative; 
+    position: relative;
 }
 
- .techno {
-    height:  20%;
-     font-size: clamp(1.2rem, 1.7vw, 2.3rem); 
+.techno {
+    height: 20%;
     margin-bottom: 1rem;
 }
+
 .overview {
-    font-size: 1rem;
+    font-size: clamp(1rem, 1vw, 3rem);
     height: 70%;
-    
-  }
-.overview.expanded  {
-    flex: 1; 
+
+}
+
+.features,
+.technologiesUsed {
+    margin-top: 20px;
+}
+
+.technologiesUsed {
+    margin-bottom: clamp(8rem, 10vw, 15rem);
+}
+
+.features ul,
+.technologiesUsed ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.overview.expanded {
+    flex: 1;
     height: 100%;
     overflow-y: scroll !important;
     padding-bottom: 1rem;
 }
-.overview.expanded  {
+
+.overview.expanded {
     height: 100%;
-    line-clamp:unset;
+    line-clamp: unset;
     -webkit-line-clamp: unset;
 }
-.expanded p:not(.par4){
-    margin-bottom: 1rem;
-}
-.par4{
-    margin-bottom: 7rem;
-}
+
+
 
 .aboutProject.expanded {
-     border:none;
-     height: 100%;
+    border: none;
+    height: 100%;
     transform: translateY(-40%);
-    transition: transform 0.6s  ease-in-out;
-   
+    transition: transform 0.6s ease-in-out;
+
 }
+
 .see-more {
     position: absolute;
     bottom: -7px;
@@ -106,57 +127,60 @@
     padding: 5px;
     border-radius: 5px;
 }
-.project .head{
-display: flex; 
-flex-direction: row;
-justify-content: space-between;
-height:fit-content;
+
+.project .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
 }
-.project .head h1{
-    font-size: clamp(1.2rem, 2vw, 2.3rem); 
+
+.project .head h1 {
+    font-size: clamp(1.2rem, 2vw, 5rem);
 }
+
 @media screen and (max-width:1100px) {
     .aboutProject.expanded {
         margin-bottom: -30vh;
-        }
+    }
 
 }
 
 
 @media screen and (max-width:900px) {
-  .project{
-    width:100%;
-    min-height:420vh;
-    max-height: 100%; 
-  }
-    .project .projectGridCon{
+    .project {
+        width: 100%;
+        min-height: 420vh;
+        max-height: 100%;
+    }
+
+    .project .projectGridCon {
         grid-template-areas: "a" "a" "a" "a";
         height: 400vh;
-        gap:0px
-                           
-      }
-        .projectGridCon .cell{
-                               height: 90vh;
-                               width: 90vw;
-                            }
-        .aboutProject.expanded {
-                               border:none;
-                               overflow: hidden;
-                               height: fit-content;
-                               margin-bottom: -30vh;
-                               }
-                        
-                               .par4{
-                                margin-bottom: 9rem;
-                            }
-                            
+        gap: 0px
+    }
+
+    .projectGridCon .cell {
+        height: 90vh;
+        width: 90vw;
+    }
+
+    .aboutProject.expanded {
+        border: none;
+        overflow: hidden;
+        height: fit-content;
+        margin-bottom: -30vh;
+    }
+
+    .par4 {
+        margin-bottom: 9rem;
+    }
+
 }
 
 @media screen and (max-width:400px) {
     .aboutProject.expanded {
-        border:none;
-         transform: translateY(-20%);
-       }
+        border: none;
+        transform: translateY(-20%);
+    }
 }
-
-

@@ -14,6 +14,118 @@
     "aboutme2LineOne": "Je suis maintenant en transition de carrière",
     "aboutme2LineTwo": "pour devenir Développeur Full Stack car j'aime",
     "aboutme2LineThree": "vraiment écrire du code et apprendre quelque",
-    "aboutme2LineFour": "chose de nouveau chaque jour."
+    "aboutme2LineFour": "chose de nouveau chaque jour.",
+    "Project": {
+    "ProjectOne": {
+      "Overview": [
+        "Développé une application web interactive conçue pour présenter les services et solutions numériques d'une entreprise de manière visuellement attrayante.",
+        "L'application offre une expérience utilisateur fluide avec une navigation personnalisée et des éléments interactifs, mettant en avant divers défis commerciaux et leurs solutions correspondantes."
+      ],
+      "Features": [
+        "Navigation personnalisée avec des transitions fluides et une interface utilisateur intuitive.",
+        "Éléments interactifs tels que des animations, des effets au survol et du contenu dynamique.",
+        "Sections de présentation des solutions qui exposent clairement les défis commerciaux et les solutions."
+      ],
+      "TechnologiesUsed": [
+        "React",
+        "TypeScript",
+        "React Router",
+        "HTML/CSS",
+        "Vite",
+        "Tailwind CSS",
+        "Netlify",
+        "Swiper",
+        "Framer Motion"
+      ]
+    },
+    "ProjectTwo": {
+      "Overview": [
+        "Développé une application web complète pour un commerce de lunettes, mettant l'accent sur la présentation et la gestion des produits de lunettes de soleil.",
+        "L'application inclut des fonctionnalités pour parcourir les produits, consulter des informations détaillées sur les produits et gérer un panier d'achat.",
+        "Intégration de Stripe pour un traitement des paiements sécurisé et efficace, permettant aux utilisateurs de compléter leurs achats en douceur.",
+        "Utilisation d'une API externe pour vérifier et utiliser la localisation des utilisateurs afin d'améliorer la fonctionnalité, comme l'affichage des emplacements des magasins ou des promotions locales.",
+        "Mise en œuvre d'un système d'authentification des utilisateurs pour permettre aux clients de créer des comptes, de se connecter et de suivre leurs commandes.",
+        "Incorporation de principes de design réactif pour garantir une expérience utilisateur fluide sur divers appareils.",
+        "Utilisation d'une pile technologique moderne pour offrir une expérience d'achat fluide et efficace, y compris des mises à jour en temps réel et des éléments interactifs."
+      ],
+      "Features": [
+        "Catalogue de produits avec informations détaillées et images de haute qualité.",
+        "Fonctionnalité de panier d'achat avec mises à jour en temps réel et processus de paiement.",
+        "Traitement des paiements sécurisé intégré avec Stripe.",
+        "Intégration d'une API externe pour vérifier la localisation des utilisateurs et fournir des services localisés.",
+        "Système d'authentification des utilisateurs pour la gestion des comptes et le suivi des commandes.",
+        "Design réactif garantissant la compatibilité sur les ordinateurs de bureau, les tablettes et les smartphones.",
+        "Éléments interactifs pour améliorer l'engagement des utilisateurs et la découverte des produits."
+      ],
+      "TechnologiesUsed": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "HTML/CSS",
+        "JavaScript",
+        "Bootstrap",
+        "Material-UI",
+        "Redux",
+        "React Router",
+        "Axios",
+        "Stripe",
+        "API externe pour les services de localisation"
+      ]
+    },
+    "ProjectThree": {
+      "Overview": [
+        "Développé un système backend pour la gestion des utilisateurs et l'authentification, utilisant des technologies modernes pour fournir des fonctionnalités sécurisées et efficaces.",
+        "Le système inclut l'inscription des utilisateurs, la vérification par email et des mécanismes de connexion sécurisés utilisant JSON Web Tokens (JWT).",
+        "Intégration des capacités de téléchargement de fichiers avec Multer et rendu dynamique des vues avec EJS.",
+        "Mise en œuvre de notifications par email via Nodemailer pour les actions transactionnelles.",
+        "Utilisation de SWA (Static Web Apps) pour un déploiement et un hébergement des fichiers sans faille.",
+        "L'application prend en charge la gestion des profils utilisateurs et la gestion sécurisée des sessions."
+      ],
+      "Features": [
+        "Inscription des utilisateurs avec vérification par email et authentification sécurisée.",
+        "Authentification basée sur JWT pour des sessions utilisateur sécurisées et sans état.",
+        "Fonctionnalité de téléchargement de fichiers avec Multer pour gérer le contenu généré par les utilisateurs.",
+        "Rendu dynamique des vues avec EJS pour des expériences utilisateur personnalisées.",
+        "Notifications par email transactionnelles via Nodemailer pour des actions telles que l'inscription et la vérification.",
+        "Déploiement et hébergement des fichiers efficaces en utilisant SWA."
+      ],
+      "TechnologiesUsed": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JSON Web Tokens (JWT)",
+        "Multer (pour les téléchargements de fichiers)",
+        "EJS (pour le rendu des vues)",
+        "Nodemailer (pour l'envoi des emails transactionnels)",
+        "SWA (Static Web Apps)"
+      ]
+    },
+    "ProjectFour": {
+      "Overview": [
+        "Développé une application Todo polyvalente pour aider les utilisateurs à gérer efficacement leurs tâches.",
+        "L'application inclut des fonctionnalités pour ajouter, modifier et supprimer des tâches, ainsi que pour les marquer comme terminées.",
+        "Incorporation d'une authentification utilisateur pour permettre aux utilisateurs de créer des comptes et de sauvegarder leurs tâches en toute sécurité.",
+        "Implémentation de mises à jour en temps réel pour s'assurer que les modifications des tâches sont reflétées immédiatement dans l'interface utilisateur.",
+        "Optimisé pour la réactivité afin de garantir une expérience fluide sur divers appareils."
+      ],
+      "Features": [
+        "Gestion des tâches avec des options pour ajouter, modifier, supprimer et marquer les tâches comme terminées.",
+        "Système d'authentification des utilisateurs pour la création de comptes et la gestion des tâches.",
+        "Mises à jour en temps réel pour refléter instantanément les changements dans les tâches.",
+        "Design réactif pour une expérience cohérente sur différentes tailles d'écran.",
+        "Interface utilisateur claire et intuitive pour une gestion facile des tâches."
+      ],
+      "TechnologiesUsed": [
+        "React",
+        "Node.js",
+        "HTML/CSS",
+        "JavaScript",
+        "Bootstrap",
+        "Material-UI",
+        "Axios"
+      ]
+    }
+  }
   }
   

@@ -2,20 +2,22 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import './project.css';
 
-export default function ProjectCell({ 
-    isMediumScreen, 
-    videoSrc, 
-    title, 
-    isVisible, 
-    overview, 
+export default function ProjectCell({
+    isMediumScreen,
+    videoSrc,
+    title,
+    isVisible,
+    overview,
+    features,
+    technologiesUsed,
     IconComponent,
-    index 
+    index
 }) {
     const overviewRef = useRef(null);
-    const aboutProjectRef=useRef(null)
+    const aboutProjectRef = useRef(null)
     const [isOverflowing, setIsOverflowing] = useState(false);
     const [expanded, setExpanded] = useState(false);
-
+    // console.log("features:", features)
     useEffect(() => {
         const checkOverflow = () => {
             if (overviewRef.current) {
@@ -49,11 +51,11 @@ export default function ProjectCell({
             initial={{ x: isMediumScreen ? -100 : initialX, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-           
+
         >
             {title}
             {videoSrc && (
-                <div className={`videoProject ${expanded ? 'expanded' : ''}`}  ref={aboutProjectRef}>
+                <div className={`videoProject ${expanded ? 'expanded' : ''}`} ref={aboutProjectRef}>
                     <video width="100%" height="100%" controls autoPlay muted preload="auto">
                         <source src={videoSrc} type="video/mp4" />
                         Your browser does not support the video tag.
@@ -62,7 +64,7 @@ export default function ProjectCell({
             )}
             <div className={`aboutProject ${expanded ? 'expanded' : ''}`} >
                 <div className='head'>
-                    <h1>{title}</h1> 
+                    <h1>{title}</h1>
                     {IconComponent}
                 </div>
                 <div
@@ -77,13 +79,28 @@ export default function ProjectCell({
                         {overview.map((line, i) => (
                             <p key={i} className={`par${i}`}>{line}</p>
                         ))}
+                        <h3>Features</h3>
+                        <ul>
+                            {(Array.isArray(features) ? features : []).map((feature, idx) => (
+                                <li key={idx}>{feature}</li>
+                            ))}
+                        </ul>
+                        <div className='technologiesUsed'>
+                            <h3>Technologies Used</h3>
+                            <ul>
+                                {(Array.isArray(technologiesUsed) ? technologiesUsed : []).map((tech, idx) => (
+                                    <li key={idx}>{tech}</li>
+                                ))}
+                            </ul>
+                        </div>
                         {isOverflowing && !expanded ? (
-                            <div className="see-more" style={{ position: 'absolute', bottom: '-7px' }} 
-                            onClick={() => {setExpanded(true);
-                                if (aboutProjectRef.current) {
-                                    aboutProjectRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                                }
-                            }}>
+                            <div className="see-more" style={{ position: 'absolute', bottom: '-7px' }}
+                                onClick={() => {
+                                    setExpanded(true);
+                                    if (aboutProjectRef.current) {
+                                        aboutProjectRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                    }
+                                }}>
                                 See More
                             </div>
                         ) : (

@@ -20,98 +20,113 @@
       "ProjectOne": {
       "Overview": [
         "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",
-        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.", 
-        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",  
-        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",
-        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions." 
+        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions."  
       ],
+        "Features":[
+        "Custom navigation with smooth transitions and intuitive UI.",
+        "Interactive elements such as animations, hover effects, and dynamic content.",
+        "Solution showcase sections that clearly present business challenges and solutions."
+              ],
+
       "TechnologiesUsed": [
         "React",
-        "Node.js",
-        "MongoDB",
-        "Express",
-        "HTML/CSS",
-        "JavaScript",
-        "Bootstrap",
-        "Material-UI",
-        "Redux",
+        "TypeScript",
         "React Router",
-        "Axios",
-        "MongoDB Atlas",
-        "Heroku"
+        "HTML/CSS",
+        "vite",
+        "Tailwind CSS",
+        "Netlify",
+        "swiper",
+        "Framer Motion"
       ]
     },
     "ProjectTwo": {
       "Overview": [
-        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",
-        "SAD", 
-        "AASD",  
-        "ASD", 
-        "ASD"  
-      ],
+      "Developed a comprehensive web application for an eyewear retail business, focusing on showcasing and managing sunglasses products.",
+      "The application includes features for browsing products, viewing detailed product information, and managing a shopping cart.",
+      "Integrated Stripe for secure and efficient payment processing, allowing users to complete their purchases smoothly.",
+      "Utilized an external API to check and utilize user location for enhanced functionality, such as showing store locations or local promotions.",
+      "Implemented user authentication to allow customers to create accounts, log in, and track their orders.",
+      "Incorporated responsive design principles to ensure a seamless user experience across various devices.",
+      "Utilized a modern tech stack to deliver a smooth and efficient shopping experience, including real-time updates and interactive elements."
+    ],
+    "Features": [
+      "Product catalog with detailed information and high-quality images.",
+      "Shopping cart functionality with real-time updates and checkout process.",
+      "Secure payment processing integrated with Stripe.",
+      "External API integration for checking user location and providing localized services.",
+      "User authentication system for account management and order tracking.",
+      "Responsive design ensuring compatibility across desktops, tablets, and smartphones.",
+      "Interactive elements to enhance user engagement and product discovery."
+    ],
       "TechnologiesUsed": [
         "React",
-        "Node.js",
-        "MongoDB",
-        "Express",
-        "HTML/CSS",
-        "JavaScript",
-        "Bootstrap",
-        "Material-UI",
-        "Redux",
-        "React Router",
-        "Axios",
-        "MongoDB Atlas",
-        "Heroku"
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "HTML/CSS",
+      "JavaScript",
+      "Bootstrap",
+      "Material-UI",
+      "Redux",
+      "React Router",
+      "Axios",
+      "Stripe",
+      "External API for location services"
       ]
     },
     "ProjectThree": {
       "Overview": [
-        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",
-        "SAD", 
-        "AASD",  
-        "ASD", 
-        "ASD"  
-      ],
-      "TechnologiesUsed": [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "Express",
-        "HTML/CSS",
-        "JavaScript",
-        "Bootstrap",
-        "Material-UI",
-        "Redux",
-        "React Router",
-        "Axios",
-        "MongoDB Atlas",
-        "Heroku"
-      ]
+      "Developed a backend system for user management and authentication, utilizing modern technologies to provide secure and efficient functionalities.",
+      "The system includes user signup, email verification, and secure login mechanisms using JSON Web Tokens (JWT).",
+      "Integrated file upload capabilities with Multer and dynamic view rendering with EJS.",
+      "Implemented email notifications using Nodemailer for transactional purposes.",
+      "Utilized SWA (Static Web Apps) for seamless file deployment and hosting.",
+      "The application supports user profile management and secure session handling."
+    ],
+    "Features": [
+      "User signup with email verification and secure authentication.",
+      "JWT-based authentication for secure and stateless user sessions.",
+      "File upload functionality with Multer for handling user-generated content.",
+      "Dynamic view rendering using EJS for personalized user experiences.",
+      "Transactional email notifications via Nodemailer for actions like signup and verification.",
+      "Efficient file deployment and hosting using SWA."
+    ],
+    "TechnologiesUsed": [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JSON Web Tokens (JWT)",
+      "Multer (for file uploads)",
+      "EJS (for rendering views)",
+      "Nodemailer (for sending transactional emails)",
+      "SWA (Static Web Apps)"
+    ]
     },
     "ProjectFour": {
       "Overview": [
-        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",
-        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.", 
-        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.",  
-        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions.", 
-        "Developed an interactive web application designed to present a company's digital services and solutions in a visually engaging way. The application offers a seamless user experience with custom navigation and interactive elements, showcasing various business challenges and their corresponding solutions."  
-      ],
-      "TechnologiesUsed": [
-        "React",
-        "Node.js",
-        "MongoDB",
-        "Express",
-        "HTML/CSS",
-        "JavaScript",
-        "Bootstrap",
-        "Material-UI",
-        "Redux",
-        "React Router",
-        "Axios",
-        "MongoDB Atlas",
-        "Heroku"
-      ]
+      "Developed a versatile Todo application to help users manage their tasks effectively.",
+      "The application includes functionalities for adding, editing, and deleting tasks, as well as marking them as completed.",
+      "Incorporated user authentication to allow users to create accounts and save their tasks securely.",
+      "Implemented real-time updates to ensure that task changes are reflected immediately across the user interface.",
+      "Optimized for responsiveness to ensure a seamless experience across various devices."
+    ],
+    "Features": [
+      "Task management with options to add, edit, delete, and mark tasks as completed.",
+      "User authentication system for account creation and task management.",
+      "Real-time updates to reflect changes in tasks instantly.",
+      "Responsive design for a consistent experience across different screen sizes.",
+      "Clean and intuitive user interface for easy task management."
+    ],
+    "TechnologiesUsed": [
+      "React",
+      "Node.js",
+      "HTML/CSS",
+      "JavaScript",
+      "Bootstrap",
+      "Material-UI",
+      "Axios"
+    ]
     }
   }
   }

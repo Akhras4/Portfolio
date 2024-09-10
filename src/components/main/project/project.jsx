@@ -41,28 +41,36 @@ export default function Project() {
             videoSrc: kracht,
             githubLink: 'https://github.com/Akhras4/website-kracht.git',
             websiteLink: 'https://kracht.netlify.app',
-            overview: t('Project.ProjectOne.Overview', { returnObjects: true })  
+            overview: t('Project.ProjectOne.Overview', { returnObjects: true }),
+            features: t('Project.ProjectOne.Features', { returnObjects: true }),
+            technologiesUsed: t('Project.ProjectOne.TechnologiesUsed', { returnObjects: true })
         },
         {
             title: 'samOptic',
             videoSrc: samoptic,
             githubLink: 'https://github.com/Akhras4/sham-sunglass.git',
             websiteLink: '',
-            overview: t('Project.ProjectTwo.Overview', { returnObjects: true }) 
+            overview: t('Project.ProjectTwo.Overview', { returnObjects: true }),
+            features: t('Project.ProjectTwo.Features', { returnObjects: true }),
+            technologiesUsed: t('Project.ProjectTwo.TechnologiesUsed', { returnObjects: true })
         },
         {
             title: 'Bookstore Management System',
             videoSrc: bookstore,
             githubLink: 'https://github.com/Akhras4/Bookstore-Management-System-main.git',
             websiteLink: 'https://bookstore-management-system-book.up.railway.app/login',
-            overview: t('Project.ProjectThree.Overview', { returnObjects: true })  
+            overview: t('Project.ProjectThree.Overview', { returnObjects: true }),
+            features: t('Project.ProjectThree.Features', { returnObjects: true }),
+            technologiesUsed: t('Project.ProjectThree.TechnologiesUsed', { returnObjects: true })
         },
         {
             title: 'To Do and more',
             videoSrc: todo,
             githubLink: 'https://github.com/Akhras4/todo.git',
             websiteLink: 'https://akhras4.netlify.app',
-            overview: t('Project.ProjectFour.Overview', { returnObjects: true }) 
+            overview: t('Project.ProjectFour.Overview', { returnObjects: true }),
+            features: t('Project.ProjectFour.Features', { returnObjects: true }),
+            technologiesUsed: t('Project.ProjectFour.TechnologiesUsed', { returnObjects: true })
         }
     ];
 
@@ -73,13 +81,15 @@ export default function Project() {
                 {projects.map((project, index) => (
                     <div ref={projectRefs[index]} key={project.title}>
                         <ProjectCell
-                            index={index} 
+                            index={index}
                             isMediumScreen={isMediumScreen}
                             videoSrc={project.videoSrc}
                             title={project.title}
                             isVisible={visibleCells[index]}
                             overview={project.overview}
-                            IconComponent={<Icon githupLink={project.githubLink} websiteLink={project.websiteLink} />}
+                            features={project.features}
+                            technologiesUsed={project.technologiesUsed}
+                            IconComponent={<Icon githubLink={project.githubLink} websiteLink={project.websiteLink} />}
                         />
                     </div>
                 ))}
