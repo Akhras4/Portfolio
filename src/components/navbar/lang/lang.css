@@ -2,8 +2,8 @@
 .lang{
     display: inline-block;
     position: relative;
-    margin-top: 1rem;
-    margin-right: 5em;
+    margin-top: 0.5rem;
+    margin-right: 5rem;
 }
 /* The CSS code `.lang g,.lang rect,.lang svg` is targeting the `g`, `rect`, and `svg` elements within
 elements with the class `.lang`. */

@@ -14,5 +14,118 @@
   "aboutme2LineOne": "Ik ben nu mijn carrière aan het omzetten naar",
   "aboutme2LineTwo": "Full Stack Developer omdat ik echt geniet",
   "aboutme2LineThree": "van het schrijven van code en elke dag iets",
-  "aboutme2LineFour": "nieuws leer."
+  "aboutme2LineFour": "nieuws leer.",
+  "Project": {
+    "ProjectOne": {
+      "Overview": [
+        "Ontwikkeld een interactieve webapplicatie die is ontworpen om de digitale diensten en oplossingen van een bedrijf op een visueel aantrekkelijke manier te presenteren.",
+        "De applicatie biedt een naadloze gebruikerservaring met aangepaste navigatie en interactieve elementen, waarbij verschillende zakelijke uitdagingen en hun bijbehorende oplossingen worden gepresenteerd."
+      ],
+      "Features": [
+        "Aangepaste navigatie met vloeiende overgangen en een intuïtieve gebruikersinterface.",
+        "Interactieve elementen zoals animaties, hover-effecten en dynamische inhoud.",
+        "Oplossingspresentaties die zakelijke uitdagingen en oplossingen duidelijk presenteren."
+      ],
+      "TechnologiesUsed": [
+        "React",
+        "TypeScript",
+        "React Router",
+        "HTML/CSS",
+        "Vite",
+        "Tailwind CSS",
+        "Netlify",
+        "Swiper",
+        "Framer Motion"
+      ]
+    },
+    "ProjectTwo": {
+      "Overview": [
+        "Ontwikkeld een uitgebreide webapplicatie voor een brillenretailer, met de focus op het presenteren en beheren van zonnebrilproducten.",
+        "De applicatie bevat functies voor het bladeren door producten, het bekijken van gedetailleerde productinformatie en het beheren van een winkelwagentje.",
+        "Geïntegreerd met Stripe voor veilige en efficiënte betalingsverwerking, zodat gebruikers hun aankopen soepel kunnen afronden.",
+        "Gebruik van een externe API om de locatie van de gebruiker te controleren en te gebruiken voor verbeterde functionaliteit, zoals het weergeven van winkel locaties of lokale promoties.",
+        "Implementatie van gebruikersauthenticatie om klanten in staat te stellen accounts aan te maken, in te loggen en hun bestellingen te volgen.",
+        "Incorporatie van responsieve ontwerpprincipes om een naadloze gebruikerservaring op verschillende apparaten te waarborgen.",
+        "Gebruik van een moderne techstack om een soepele en efficiënte winkelervaring te bieden, inclusief real-time updates en interactieve elementen."
+      ],
+      "Features": [
+        "Productcatalogus met gedetailleerde informatie en hoogwaardige afbeeldingen.",
+        "Winkelwagentje functionaliteit met real-time updates en afrekenproces.",
+        "Veilige betalingsverwerking geïntegreerd met Stripe.",
+        "Externe API-integratie voor het controleren van gebruikerslocatie en het aanbieden van gelokaliseerde diensten.",
+        "Gebruikersauthenticatiesysteem voor accountbeheer en ordertracking.",
+        "Responsief ontwerp dat zorgt voor compatibiliteit met desktops, tablets en smartphones.",
+        "Interactieve elementen om de gebruikersbetrokkenheid en productontdekking te verbeteren."
+      ],
+      "TechnologiesUsed": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "HTML/CSS",
+        "JavaScript",
+        "Bootstrap",
+        "Material-UI",
+        "Redux",
+        "React Router",
+        "Axios",
+        "Stripe",
+        "Externe API voor locatie services"
+      ]
+    },
+    "ProjectThree": {
+      "Overview": [
+        "Ontwikkeld een backend-systeem voor gebruikersbeheer en authenticatie, gebruikmakend van moderne technologieën om veilige en efficiënte functionaliteiten te bieden.",
+        "Het systeem omvat gebruikersregistratie, e-mailverificatie en veilige inlogmechanismen met JSON Web Tokens (JWT).",
+        "Geïntegreerde bestandsuploadcapaciteiten met Multer en dynamische weergave met EJS.",
+        "Implementatie van e-mailmeldingen met Nodemailer voor transactionele doeleinden.",
+        "Gebruik van SWA (Static Web Apps) voor naadloze bestandspublicatie en hosting.",
+        "De applicatie ondersteunt gebruikersprofielbeheer en veilige sessiebehandeling."
+      ],
+      "Features": [
+        "Gebruikersregistratie met e-mailverificatie en veilige authenticatie.",
+        "JWT-gebaseerde authenticatie voor veilige en stateless gebruikerssessies.",
+        "Bestandsuploadfunctionaliteit met Multer voor het verwerken van door gebruikers gegenereerde inhoud.",
+        "Dynamische weergave met EJS voor gepersonaliseerde gebruikerservaringen.",
+        "Transactionele e-mailmeldingen via Nodemailer voor acties zoals registratie en verificatie.",
+        "Efficiënte bestandspublicatie en hosting met SWA."
+      ],
+      "TechnologiesUsed": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JSON Web Tokens (JWT)",
+        "Multer (voor bestandsuploads)",
+        "EJS (voor weergave van views)",
+        "Nodemailer (voor het verzenden van transactionele e-mails)",
+        "SWA (Static Web Apps)"
+      ]
+    },
+    "ProjectFour": {
+      "Overview": [
+        "Ontwikkeld een veelzijdige Todo-applicatie om gebruikers te helpen hun taken effectief te beheren.",
+        "De applicatie bevat functionaliteiten voor het toevoegen, bewerken en verwijderen van taken, evenals het markeren als voltooid.",
+        "Gebruikersauthenticatie geïntegreerd om gebruikers in staat te stellen accounts aan te maken en hun taken veilig op te slaan.",
+        "Implementatie van real-time updates om ervoor te zorgen dat taakwijzigingen onmiddellijk worden weerspiegeld in de gebruikersinterface.",
+        "Geoptimaliseerd voor responsiviteit om een naadloze ervaring op verschillende apparaten te garanderen."
+      ],
+      "Features": [
+        "Taakbeheer met opties om taken toe te voegen, bewerken, verwijderen en markeren als voltooid.",
+        "Gebruikersauthenticatiesysteem voor accountcreatie en taakbeheer.",
+        "Real-time updates om wijzigingen in taken onmiddellijk weer te geven.",
+        "Responsief ontwerp voor een consistente ervaring op verschillende schermformaten.",
+        "Schone en intuïtieve gebruikersinterface voor gemakkelijke taakbeheer."
+      ],
+      "TechnologiesUsed": [
+        "React",
+        "Node.js",
+        "HTML/CSS",
+        "JavaScript",
+        "Bootstrap",
+        "Material-UI",
+        "Axios"
+      ]
+    }
+  }
 }
+

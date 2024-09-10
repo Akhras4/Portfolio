@@ -36,3 +36,15 @@
         overflow: visible;
     }
 }
+@media screen and (min-width:1400){
+  #icon svg{
+      width: 20vmin;
+    height: 20vmin;
+  }
+  
+  #icon .githubIcon{
+      width: 15vmin;
+      height: 15vmin;
+      overflow: visible;
+  }
+}

@@ -1,15 +1,15 @@
 div .logo{
-  
     position: fixed;
-    top: 0;
-    left: 0rem;
+    top: 0.5rem;
+    left: clamp(1rem, 2.5rem, 5rem);
     z-index: 10;
     background-color: transparent;
     box-sizing: border-box;
 }
 svg{
     background-color: transparent;
-    fill: transparent; 
+    fill: transparent;
+    height: 15vh; 
 }
 @keyframes stroke {
     0% { stop-color: #2c8ee9; }
