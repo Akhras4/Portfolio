@@ -4,9 +4,9 @@
     position: relative;
     margin-top: 0.5rem;
     margin-right: 5rem;
+    z-index: 11; 
 }
-/* The CSS code `.lang g,.lang rect,.lang svg` is targeting the `g`, `rect`, and `svg` elements within
-elements with the class `.lang`. */
+
 .lang svg{
     overflow: visible !important;
     width: 100%;

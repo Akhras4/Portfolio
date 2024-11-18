@@ -18,6 +18,9 @@
     position: relative;
 
 }
+.projectGridCon div{
+    z-index: 11;
+}
 
 .projectGridCon .cell {
     background-color: white;
