@@ -1,10 +1,19 @@
-import React from 'react'
+import React ,{ useEffect } from 'react'
+import bg from '../../../asset/video/bg.gif';
 import LanguageContext from '../../../context/context'
 import './welcome.css'
 export default function Welcome() {
     const { t } = React.useContext(LanguageContext)
+    useEffect(() => {
+      const grainnoice = document.querySelector('.grain-noice');
+      if (grainnoice) {
+          console.log('grainnoice');
+          grainnoice.style.backgroundImage = `url(${bg})`;
+      }
+  }, []);
   return (
     <div className='welcome'>
+      <div className='grain-noice' ></div>
         <hgroup>
             <h1>{t('Welcome')}</h1>
             <h2>{t('name')}</h2>

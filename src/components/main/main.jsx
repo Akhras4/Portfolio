@@ -16,6 +16,7 @@ export default function Main() {
       <Aboutme />
       <Project />
       <Light />
+      
 
     </div>
   )
