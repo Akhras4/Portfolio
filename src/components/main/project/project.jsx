@@ -5,7 +5,9 @@ import Icon from './icon';
 import Lightproject from './lightproject';
 import useMediaQuery from '../../../customHook/useMediaQuery';
 import kracht from '../../../asset/video/kracht.webm';
+import social from '../../../asset/video/social.webm'
 import samoptic from '../../../asset/video/samoptic.webm';
+import liik from '../../../asset//video/liik.webm'
 import bookstore from '../../../asset/video/book-store.mp4'
 import todo from '../../../asset/video/todo.webm'
 import ProjectCell from './ProjectCell';
@@ -13,8 +15,8 @@ import ProjectCell from './ProjectCell';
 export default function Project() {
     const { t } = useContext(LanguageContext);
     const isMediumScreen = useMediaQuery('(max-width: 900px)');
-    const projectRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
-    const [visibleCells, setVisibleCells] = useState([false, false, false, false]);
+    const projectRefs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
+    const [visibleCells, setVisibleCells] = useState([false, false, false, false, false, false]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -36,6 +38,24 @@ export default function Project() {
     }, []);
 
     const projects = [
+        {
+            title: 'LIIK',
+            videoSrc: liik,
+            githubLink: 'https://codepen.io/A-Akhras/full/PoMZKPX',
+            websiteLink: 'https://codepen.io/A-Akhras/full/PoMZKPX',
+            overview: t('Project.ProjectFour.Overview', { returnObjects: true }),
+            features: t('Project.ProjectFour.Features', { returnObjects: true }),
+            technologiesUsed: t('Project.ProjectFour.TechnologiesUsed', { returnObjects: true })
+        },
+        {
+            title: 'SocialContent',
+            videoSrc: social,
+            githubLink: 'https://github.com/Akhras4/nourpainting.git',
+            websiteLink: 'https://sociallcontent.netlify.app/',
+            overview: t('Project.ProjectFour.Overview', { returnObjects: true }),
+            features: t('Project.ProjectFour.Features', { returnObjects: true }),
+            technologiesUsed: t('Project.ProjectFour.TechnologiesUsed', { returnObjects: true })
+        },
         {
             title: 'kracht',
             videoSrc: kracht,

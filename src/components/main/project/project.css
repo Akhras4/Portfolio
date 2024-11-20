@@ -14,7 +14,7 @@
     grid-template-areas: "a a"
         "a a";
     gap: 2rem;
-    height: 200vh;
+    height: 300vh;
     position: relative;
 
 }
@@ -153,13 +153,13 @@
 @media screen and (max-width:900px) {
     .project {
         width: 100%;
-        min-height: 420vh;
+        min-height: 620vh;
         max-height: 100%;
     }
 
     .project .projectGridCon {
         grid-template-areas: "a" "a" "a" "a";
-        height: 400vh;
+        height: 600vh;
         gap: 0px
     }
 
