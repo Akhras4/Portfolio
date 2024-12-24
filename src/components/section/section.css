@@ -2,7 +2,8 @@
     margin-top:2rem;
     width:100vw;
     height: 90vh;
-    display:flex; 
+    display:flex;
+    overflow: visible; 
     
 }
 .sec-con-1{
@@ -16,7 +17,7 @@
     background-color: black;
     border-radius: 20px;
  }
- .sec-con-2::before{
+ .sec-con-2::before, .sec-con::before{
    position: absolute;
    content: "";
    inset:-4px;
@@ -24,4 +25,24 @@
    filter: blur(5px);
   z-index: -1;
    border-radius: 20px;
+ }
+ .part-section-con{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width:100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    
+
+
+ }
+ .sec-con{
+    width:35%;
+    height: 100%;
+    position: relative;
+    background-color: black;
+    border-radius: 20px;
+
  }
