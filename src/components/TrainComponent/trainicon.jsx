@@ -8,7 +8,7 @@ const Trainicon = ({startColor}) => (
         zIndex: 10,
 
       }}>
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 224 280"  style={{height:'50vh' }}>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 224 280"  style={{height:'50vh',marginTop:"-15vh" }}>
     <path
       fill={startColor}
       stroke="#0000"

@@ -25,7 +25,8 @@ export default function TrainComponent({startColor, middleColor, endColor}) {
       >
         <div
           style={{
-            height: "100vh",
+            marginTop:"-15vh",
+            height: "115vh",
             width: "4px",
             background:
               `linear-gradient(180deg, ${startColor} 0%, ${middleColor} 40%, ${middleColor} 70%, ${endColor} 120%)`,
