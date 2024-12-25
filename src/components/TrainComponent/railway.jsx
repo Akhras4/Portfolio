@@ -12,7 +12,7 @@ export default function Railway({startColor, middleColor, endColor}) {
         <div
           style={{
             marginLeft:"11%",
-            height: "4px",
+            height: "6px",
             width: "100%",
             background: `linear-gradient(120deg, ${startColor} 0%, ${middleColor} 50%,  ${endColor} 100%)`,
           }}

@@ -1,0 +1,17 @@
+@keyframes pulseEffect {
+    0% {
+      r: 10;
+    }
+    50% {
+      r: 35; 
+    }
+    100% {
+      r: 25; 
+    }
+  }
+  
+  .animate-pulse-station {
+    animation: pulseEffect 2s infinite ease-in-out;
+  }
+  
+  

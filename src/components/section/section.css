@@ -14,13 +14,14 @@
     width: 70%;
     height: 100%;
     position: relative;
-    background-color: black;
+    background:rgba(0, 0, 0, 0.767);
     border-radius: 20px;
+    
  }
  .sec-con-2::before, .sec-con::before{
    position: absolute;
    content: "";
-   inset:-4px;
+   inset:-8px;
    background-color: var(--background-color, rgb(53, 140, 181));
    filter: blur(5px);
   z-index: -1;
@@ -42,7 +43,35 @@
     width:35%;
     height: 100%;
     position: relative;
-    background-color: black;
+    background-color:black;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 
+ }
+ .data-left{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(124deg, rgba(36, 80, 85, 0.20) 16.17%, rgba(36, 80, 85, 0.00) 74.83%)
+ }
+ .data-right{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(124deg, rgba(68, 139, 238, 0.14) 16.17%, rgba(47, 126, 236, 0.00) 74.83%);
+ }
+ .section-info{
+    color:aliceblue;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    /* background: var(--backgroundColorInfo, linear-gradient(180deg,#07060B 50%,#0A090E 100%)); */
+    
+ }
+ .section-data{
+width: 100%;
+height: 100%;
+ }
+ .second-part,.first-part{
+    width: 100%;
+    height: 50%;
  }
