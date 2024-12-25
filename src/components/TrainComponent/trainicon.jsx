@@ -1,14 +1,43 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
+import "./train.css"
 
-const Trainicon = ({startColor}) => (
-    <div style={{
+const Trainicon = ({ containerRef,startColor }) => {
+  const [scrollOffset, setScrollOffset] = useState(0);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      if (containerRef?.current) {
+        const containerTop = containerRef.current.offsetTop;
+        const containerHeight = containerRef.current.offsetHeight;
+        const windowHeight = window.innerHeight;
+        const scrollPosition = window.scrollY;
+        const startScroll = containerTop - windowHeight;
+        const endScroll = containerTop + containerHeight;
+        if (scrollPosition >= startScroll && scrollPosition <= endScroll) {
+          const distanceScrolled = scrollPosition - startScroll; 
+          const maxScrollableDistance = endScroll - startScroll; 
+          const proportionalScroll = (distanceScrolled / maxScrollableDistance) * 500;
+          setScrollOffset(proportionalScroll);
+          console.log('scrollPosition:', scrollPosition);
+        }
+      }
+    };
 
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [containerRef]);
+
+  return (
+    <div
+      style={{
         maxWidth: "fit-content",
         position: "absolute",
         zIndex: 10,
-
-      }}>
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 224 280"  style={{height:'50vh',marginTop:"-15vh" }}>
+        transform: `translateY(${scrollOffset-50}%)`, 
+        transition: "transform 1s linear", 
+      }}
+    >
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 224 280"  style={{height:'35vh',marginTop:"-15vh" }}>
     <path
       fill={startColor}
       stroke="#0000"
@@ -22,12 +51,12 @@ const Trainicon = ({startColor}) => (
     <ellipse cx="112" cy="93" stroke="#9ADAEA" rx="3" ry="2"></ellipse>
     <ellipse cx="112" cy="112" stroke="#9ADAEA" rx="3" ry="2"></ellipse>
     <path
-      fill="#0000"
+      fill="#9ADAEA"
       d="M118 11.581a.5.5 0 0 1 1 0v106.816a.5.5 0 0 1-1 0zM105 11.581a.5.5 0 0 1 1 0v106.816a.5.5 0 0 1-1 0z"
       opacity="0.25"
     ></path>
     <path
-      fill="#000000"
+      fill="#9ADAEA"
       d="m119.022 131.122.767-6.4c.093-.773-.729-1.441-1.492-1.285-1.27.258-3.306.525-6.297.525s-5.027-.267-6.297-.525c-.763-.156-1.585.512-1.492 1.285l.767 6.4c.015.121.039.24.094.348.303.596 1.704 2.589 6.928 2.589s6.625-1.993 6.928-2.589c.055-.108.079-.227.094-.348"
     ></path>
     <path
@@ -94,5 +123,6 @@ const Trainicon = ({startColor}) => (
   </svg>
   </div>
 );
+}
 
 export default Trainicon;

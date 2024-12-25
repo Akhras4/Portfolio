@@ -20,6 +20,7 @@ export default function Main() {
       startColor="#08070C" 
       middleColor="rgba(16, 125, 152, 0.8)" 
       endColor="#08070C "
+      backgroundColorInfo="linear-gradient(124deg, rgba(68, 139, 238, 0.14) 16.17%, rgba(47, 126, 236, 0.00) 74.83%)"
        />
       <Railway
       startColor="rgb(53, 140, 181)" 
@@ -30,6 +31,7 @@ export default function Main() {
        startColor="rgb(219, 101, 205)" 
        middleColor="rgba(219, 101, 205, 0.8)" 
        endColor="rgb(219, 101, 205)"
+       backgroundColorInfo="linear-gradient(180deg,#07060B 50%,#0A090E 100%)"
        />
        <Railway
       startColor="rgb(53, 140, 181)" 
@@ -38,8 +40,10 @@ export default function Main() {
        />
        <Section  direction="row"
       startColor="#08070C" 
-      middleColor="rgba(16, 125, 152, 0.8)" 
-      endColor="#08070C "
+      middleColor="rgb(36, 80, 85)" 
+      endColor="rgba(36, 80, 85, 0.20) "
+      backgroundColor="rgb(36, 80, 85)"
+      backgroundColorInfo="linear-gradient(124deg, rgba(36, 80, 85, 0.20) 25.17%, rgba(36, 80, 85, 0.00) 74.83%)"
        />
        
        <Railway

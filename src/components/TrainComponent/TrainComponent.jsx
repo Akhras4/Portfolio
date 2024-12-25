@@ -1,17 +1,20 @@
-import React from "react";
-import Train from '../../asset/image/landing-train-5.svg'
+import React, { useRef } from "react";
 import Trainicon from "./trainicon";
+import "./train.css"
 
-export default function TrainComponent({startColor, middleColor, endColor}) {
-    return (
-      <div
-        style={{
-          position: "relative",
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Trainicon startColor={middleColor}/>
+export default function TrainComponent({ startColor, middleColor, endColor }) {
+  const containerRef = useRef(null);
+
+  return (
+    <div
+      ref={containerRef}
+      style={{
+        position: "relative",
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
+      <Trainicon containerRef={containerRef} startColor={middleColor} />
       <div
         style={{
           position: "absolute",
@@ -25,11 +28,10 @@ export default function TrainComponent({startColor, middleColor, endColor}) {
       >
         <div
           style={{
-            marginTop:"-15vh",
+            marginTop: "-15vh",
             height: "115vh",
-            width: "4px",
-            background:
-              `linear-gradient(180deg, ${startColor} 0%, ${middleColor} 40%, ${middleColor} 70%, ${endColor} 120%)`,
+            width: "6px",
+            background: `linear-gradient(180deg, ${startColor} 0%, ${middleColor} 40%, ${middleColor} 70%, ${endColor} 120%)`,
           }}
         />
       </div>
@@ -56,7 +58,7 @@ export default function TrainComponent({startColor, middleColor, endColor}) {
           fill="white"
           strokeOpacity="0.14"
           fillOpacity="0.08"
-          className="animate-pulse-station"
+          className="animate-pulse-station" 
         />
         <circle cx="42" cy="42" r="8" fill={startColor} />
       </svg>
