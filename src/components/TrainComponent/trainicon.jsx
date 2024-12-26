@@ -14,7 +14,7 @@ const Trainicon = ({ containerRef,startColor }) => {
         const startScroll = containerTop - windowHeight;
         const endScroll = containerTop + containerHeight;
         if (scrollPosition >= startScroll && scrollPosition <= endScroll) {
-          const distanceScrolled = scrollPosition - startScroll; 
+          const distanceScrolled = scrollPosition - startScroll; // Distance scrolled inside the container
           const maxScrollableDistance = endScroll - startScroll; 
           const proportionalScroll = (distanceScrolled / maxScrollableDistance) * 500;
           setScrollOffset(proportionalScroll);

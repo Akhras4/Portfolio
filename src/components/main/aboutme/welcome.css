@@ -4,9 +4,7 @@
     color:rgba(255, 255, 255, 0.956);
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 5rem ;
-    & *{
-        padding-top: 1rem;
-    }
+    
 }
 .welcome p{
     font-weight: bold;
@@ -30,7 +28,7 @@
 
 }
 .wel-con{
-    margin-top: 4rem;
+    margin-top: 0rem;
 height: fit-content;
 min-height: 70vh;
 display: flex;
@@ -43,7 +41,7 @@ flex-direction: row;
     position: relative;
     border-radius: 50px;
     margin-right: 3rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
    
 }
 .fancy-inner-element{
@@ -94,7 +92,7 @@ flex-direction: row;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    gap:5rem;
+    gap:3rem;
     width: 80%;
 }
 .grain-noice{
@@ -120,10 +118,65 @@ flex-direction: row;
 }
 
 @media screen and (max-width:600px) {
-
+     .wel-con{
+        margin-top: -3rem;
+     }
+    .welcome{
+        gap: 1.5rem;
+    }
     .welcome hgroup{
         margin-left: 3rem ;
     }
+    .img-con{
+        display:none;
+    }
   
     
+}
+.cv-doc {
+    display: flex;
+    column-gap: 3rem;
+    z-index: 2;
+    margin-left: 5rem ;
+    margin-bottom: 1rem;
+}
+
+.cv, .doc {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background-color: #000000;
+    color: aliceblue;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cv::before, .doc::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    background-size: 200% 200%; 
+    z-index: -1;  
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.cv:hover::before, .doc:hover::before {
+    animation: shine 2s infinite; 
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

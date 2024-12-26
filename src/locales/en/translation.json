@@ -1,5 +1,7 @@
+
 {
-    "Welcome": "Hallo",
+    
+  "Welcome": "Hallo",
     "name":"I'm Abdulrahman Akhras",
     "position":"A Frontend Devloper",
     "where":"From Nijmegen,NL .",
@@ -128,5 +130,45 @@
       "Axios"
     ]
     }
+  },
+  "EDUsection": {
+    "title": "EDUCATION AND TRAINING",
+    "firstPart": {
+      "title": "BACHELOR DEGREE IN ELECTRICAL ENGINEERING",
+      "description": "Graduated from the University of Technology in 2017 with a Bachelor's degree in Electrical Engineering.",
+      "docs":[]
+    },
+    "secondPart": {
+      "title": "CERTIFICATE IN COMPUTER TECHNIQUES"
+    }
+  },
+  "WEsection": {
+    "title": "WORK EXPERIENCE",
+    "firstPart": {
+      "title": "SOFTWARE DEVELOPER",
+      "companyName":"CODE MATRIX ZONE",
+      "period":"6/12/2022 – CURRENT Rotterdam, Netherlands",
+      "description": 
+     "As a software developer, I am responsible for designing, developing, and maintaining software applications tailored to meet the specific requirements of each project. I focus on writing clean, efficient, and testable code while adhering to industry standards. In addition to development, I ensure that software applications are reliable and perform optimally by thoroughly debugging and troubleshooting issues that arise, applying rigorous testing methodologies to identify and resolve defects. I collaborate extensively with project managers, designers, and other developers to ensure seamless integration and alignment with the project’s objectives. Through clear communication, I keep all stakeholders informed on progress, challenges, and solutions, ensuring projects stay on track and meet deadlines. Committed to staying at the forefront of the tech industry, I continuously expand my knowledge of new programming languages, tools, and technologies. I apply these learnings to refine my development processes and improve the quality of the software I deliver, always adhering to best practices to ensure that every solution I provide is both scalable and sustainable."
+
+    }
+   
+  },
+  "WEsection1": {
+    "title": "WORK EXPERIENCE as ELECTRICAL ENGINEER",
+    "firstPart": {
+      "title": "ELECTRICAL ENGINEER",
+      "companyName":"ARSANMAK MAKINA",
+      "period":"05/01/2018 – 01/09/2019 \u00A0\u00A0\u00A0Istanbul, Türkiye ",
+      "description": "As an Electrical Engineer at Arsanmak Makina, I designed detailed electrical schematics and layouts for automatic filling and capping machines using EPLA. Collaborating closely with customers, engineers, and team members, I ensured that project requirements were met and technical issues were resolved effectively. I also documented project progress, analyzed data, and prepared comprehensive reports on electrical studies. Additionally, I developed equipment specifications for purchasing electrical components and materials, guaranteeing alignment with project needs and standards."
+    },
+    "secondPart": {
+      "title": "ELECTRICAL ENGINEER\u00A0\u00A0\u00A0",
+      "companyName":"ALSHEHABIE",
+      "period":"15/06/2016 – 01/09/2017\u00A0\u00A0\u00A0Tartous, Syria",
+      "description": "As an Electrical Engineer at Alshehabie, I designed detailed PLC schematics for system relaying and protection, ensuring the safe and reliable operation of electrical systems. I developed and managed the electrical design portion of project schedules, coordinating tasks to meet deadlines and aligning with overall project timelines. By applying industry best practices, I ensured optimal electrical designs and drove continuous process improvements, contributing to project efficiency and quality outcomes."
+    }
+    
+    
   }
-  }
+}
