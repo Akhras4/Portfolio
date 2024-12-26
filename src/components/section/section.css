@@ -3,7 +3,8 @@
     width:100vw;
     height: 90vh;
     display:flex;
-    overflow: visible; 
+    overflow: visible;
+    
     
 }
 .sec-con-1{
@@ -16,6 +17,7 @@
     position: relative;
     background:rgba(0, 0, 0, 0.767);
     border-radius: 20px;
+    padding-left: 2rem;
     
  }
  .sec-con-2::before, .sec-con::before{
@@ -70,8 +72,25 @@
  .section-data{
 width: 100%;
 height: 100%;
+overflow: hidden; 
  }
  .second-part,.first-part{
     width: 100%;
-    height: 50%;
+    margin-bottom: 3rem;
  }
+ .doc-img{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    
+ }
+ .first-part h2{
+    white-space: pre;
+
+ }
+ .title-data{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap:2rem;
+ }
+

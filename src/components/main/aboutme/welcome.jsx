@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import bg from '../../../asset/video/bg.gif';
 import LanguageContext from '../../../context/context'
 import './welcome.css'
@@ -7,7 +7,7 @@ import MyPhoto1 from "../../../asset/image/my1.jpg"
 import MyPhoto2 from "../../../asset/image/my2.jpg"
 import { motion } from "framer-motion";
 export default function Welcome() {
-  const MyPhoto = [MyPhoto0, MyPhoto2,MyPhoto1];
+  const MyPhoto = [MyPhoto0, MyPhoto2, MyPhoto1];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const { t } = React.useContext(LanguageContext)
@@ -27,35 +27,39 @@ export default function Welcome() {
   }, [MyPhoto.length]);
   return (
     <>
-    <div className='wel-con'>
-    <div className='welcome'>
-      <div className='grain-noice' ></div>
-      <hgroup>
-        <h1>{t('Welcome')}</h1>
-        <h2>{t('name')}</h2>
-        <p>{t('position')}</p>
-        <h3>{t('where')}</h3>
-        <h2>{t('what i do')}</h2>
-      </hgroup>
-    </div>
-    <div className='img-con'>
-      
-      <div className="fancy-inner-element "></div>
-      <div className='overflow'>
-      <motion.div
-        key={currentIndex}
-        initial={{ opacity: 0, x: 50 }} 
-        animate={{ opacity: 1, x: 0 }}  
-        exit={{ opacity: 0, x: 50 }}    
-        transition={{ duration: 0.8 }}  
-        className="slideshow-image-wrapper"
-      >
-        <img src={MyPhoto[currentIndex]} alt="slideshow" />
-      </motion.div>
+      <div className='wel-con'>
+        <div className='welcome'>
+          <div className='grain-noice' ></div>
+          <hgroup>
+            <h1>{t('Welcome')}</h1>
+            <h2>{t('name')}</h2>
+            <p>{t('position')}</p>
+            <h3>{t('where')}</h3>
+            <h2>{t('what i do')}</h2>
+          </hgroup>
+          <div className='cv-doc'>
+            <div className='cv'>Download CV</div>
+            <div className='doc'>Download DOC</div>
+          </div>
+        </div>
+        <div className='img-con'>
+
+          <div className="fancy-inner-element "></div>
+          <div className='overflow'>
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 50 }}
+              transition={{ duration: 0.8 }}
+              className="slideshow-image-wrapper"
+            >
+              <img src={MyPhoto[currentIndex]} alt="slideshow" />
+            </motion.div>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
-    <div className='Bar'>
+      <div className='Bar'>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -125,7 +129,7 @@ export default function Welcome() {
           </defs>
         </svg>
       </div>
-      </>
-    
+    </>
+
   )
 }

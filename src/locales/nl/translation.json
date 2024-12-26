@@ -126,6 +126,16 @@
         "Axios"
       ]
     }
+  },
+  "section": {
+    "title": "OPLEIDING EN TRAINING",
+    "firstPart": {
+      "title": "BACHELOR IN ELEKTROTECHNIEK",
+      "description": "Afgestudeerd aan de Technische Universiteit in 2018 met een bachelordiploma in Elektrotechniek."
+    },
+    "secondPart": {
+      "title": "CERTIFICAAT IN COMPUTERTECHNIEKEN"
+    }
   }
 }
 
