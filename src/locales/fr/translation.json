@@ -127,6 +127,43 @@
         "Axios"
       ]
     }
-  }
+  },
+    "EDUsection": {
+      "title": "ÉDUCATION ET FORMATION",
+      "firstPart": {
+        "title": "LICENCE EN GÉNIE ÉLECTRIQUE",
+        "description": "Diplômé de l'Université de Technologie en 2017 avec une Licence en Génie Électrique.",
+        "docs": []
+      },
+      "secondPart": {
+        "title": "CERTIFICAT EN TECHNIQUES INFORMATIQUES"
+      }
+    },
+    "WEsection": {
+      "title": "EXPÉRIENCE PROFESSIONNELLE",
+      "firstPart": {
+        "title": "DÉVELOPPEUR LOGICIEL",
+        "companyName": "CODE MATRIX ZONE",
+        "period": "6/12/2022 – ACTUEL Rotterdam, Pays-Bas",
+        "description": "En tant que développeur logiciel, je suis responsable de la conception, du développement et de la maintenance d'applications logicielles adaptées aux exigences spécifiques de chaque projet. Je me concentre sur l'écriture de code propre, efficace et testable tout en respectant les normes de l'industrie. En plus du développement, je m'assure que les applications logicielles sont fiables et performantes en effectuant un débogage minutieux et en résolvant les problèmes, en appliquant des méthodologies de test rigoureuses pour identifier et corriger les défauts. Je collabore largement avec les chefs de projet, les concepteurs et les autres développeurs pour garantir une intégration transparente et une cohérence avec les objectifs du projet. Grâce à une communication claire, je tiens toutes les parties prenantes informées des progrès, des défis et des solutions, en veillant à ce que les projets respectent les délais. Engagé à rester à la pointe de l'industrie technologique, j'élargis continuellement mes connaissances sur les nouveaux langages de programmation, outils et technologies. J'applique ces apprentissages pour affiner mes processus de développement et améliorer la qualité des logiciels que je livre, en respectant toujours les meilleures pratiques pour garantir que chaque solution que je fournis est à la fois évolutive et durable."
+      }
+    },
+    "WEsection1": {
+      "title": "EXPÉRIENCE PROFESSIONNELLE EN TANT QU'INGÉNIEUR ÉLECTRICIEN",
+      "firstPart": {
+        "title": "INGÉNIEUR ÉLECTRICIEN",
+        "companyName": "ARSANMAK MAKINA",
+        "period": "05/01/2018 – 01/09/2019 Istanbul, Turquie",
+        "description": "En tant qu'Ingénieur Électricien chez Arsanmak Makina, j'ai conçu des schémas électriques détaillés et des plans pour des machines automatiques de remplissage et de capsulage à l'aide d'EPLA. En collaborant étroitement avec les clients, les ingénieurs et les membres de l'équipe, j'ai veillé à ce que les exigences du projet soient respectées et que les problèmes techniques soient résolus efficacement. J'ai également documenté les progrès des projets, analysé les données et préparé des rapports détaillés sur les études électriques. De plus, j'ai élaboré des spécifications pour l'achat de composants et de matériaux électriques, garantissant leur conformité aux besoins et normes des projets."
+      },
+      "secondPart": {
+        "title": "INGÉNIEUR ÉLECTRICIEN",
+        "companyName": "ALSHEHABIE",
+        "period": "15/06/2016 – 01/09/2017 Tartous, Syrie",
+        "description": "En tant qu'Ingénieur Électricien chez Alshehabie, j'ai conçu des schémas PLC détaillés pour le relais et la protection des systèmes, garantissant le fonctionnement sûr et fiable des systèmes électriques. J'ai développé et géré la partie conception électrique des plannings de projets, coordonné les tâches pour respecter les délais et aligné les plannings sur les projets globaux. En appliquant les meilleures pratiques de l'industrie, j'ai garanti des conceptions électriques optimales et encouragé les améliorations continues des processus, contribuant à l'efficacité et à la qualité des projets."
+      }
+    }
+  
+  
   }
   

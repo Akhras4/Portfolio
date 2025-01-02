@@ -14,7 +14,7 @@ function App() {
 
     setTimeout(() => {
       setShow(true)
-    }, 9000)
+    }, 0)
   }, [])
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -22,7 +22,6 @@ function App() {
   return (
     <div className="App">
       <LanguageContext.Provider value={{ changeLanguage, t }} >
-
         {!show ?
           <Loading /> : (
             <Main />
