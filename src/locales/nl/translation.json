@@ -127,15 +127,42 @@
       ]
     }
   },
-  "section": {
-    "title": "OPLEIDING EN TRAINING",
-    "firstPart": {
-      "title": "BACHELOR IN ELEKTROTECHNIEK",
-      "description": "Afgestudeerd aan de Technische Universiteit in 2018 met een bachelordiploma in Elektrotechniek."
+    "EDUsection": {
+      "title": "OPLEIDING EN TRAINING",
+      "firstPart": {
+        "title": "BACHELOR IN ELEKTROTECHNIEK",
+        "description": "Afgestudeerd aan de Technische Universiteit in 2017 met een bachelordiploma in Elektrotechniek.",
+        "docs": []
+      },
+      "secondPart": {
+        "title": "CERTIFICAAT IN COMPUTERTECHNIEKEN"
+      }
     },
-    "secondPart": {
-      "title": "CERTIFICAAT IN COMPUTERTECHNIEKEN"
+    "WEsection": {
+      "title": "WERKERVARING",
+      "firstPart": {
+        "title": "SOFTWAREONTWIKKELAAR",
+        "companyName": "CODE MATRIX ZONE",
+        "period": "6/12/2022 – HUIDIG Rotterdam, Nederland",
+        "description": "Als softwareontwikkelaar ben ik verantwoordelijk voor het ontwerpen, ontwikkelen en onderhouden van softwaretoepassingen die zijn afgestemd op de specifieke vereisten van elk project. Ik richt me op het schrijven van schone, efficiënte en testbare code volgens industriestandaarden. Naast ontwikkeling zorg ik ervoor dat softwaretoepassingen betrouwbaar zijn en optimaal presteren door grondig te debuggen en problemen op te lossen, en strenge testmethoden toe te passen om defecten te identificeren en op te lossen. Ik werk intensief samen met projectmanagers, ontwerpers en andere ontwikkelaars om een naadloze integratie en afstemming met de projectdoelen te garanderen. Door duidelijke communicatie houd ik alle belanghebbenden op de hoogte van voortgang, uitdagingen en oplossingen, zodat projecten op schema blijven en deadlines worden gehaald. Toegewijd aan het bijblijven in de tech-industrie, breid ik continu mijn kennis uit over nieuwe programmeertalen, tools en technologieën. Ik pas deze kennis toe om mijn ontwikkelingsprocessen te verfijnen en de kwaliteit van de software die ik lever te verbeteren, waarbij ik altijd de beste praktijken hanteer om ervoor te zorgen dat elke oplossing zowel schaalbaar als duurzaam is."
+      }
+    },
+    "WEsection1": {
+      "title": "WERKERVARING ALS ELEKTRO-INGENIEUR",
+      "firstPart": {
+        "title": "ELEKTRO-INGENIEUR",
+        "companyName": "ARSANMAK MAKINA",
+        "period": "05/01/2018 – 01/09/2019 Istanbul, Turkije",
+        "description": "Als Elektro-ingenieur bij Arsanmak Makina ontwierp ik gedetailleerde elektrische schema's en lay-outs voor automatische vul- en sluitmachines met behulp van EPLA. Door nauw samen te werken met klanten, ingenieurs en teamleden zorgde ik ervoor dat projectvereisten werden nageleefd en technische problemen effectief werden opgelost. Ik documenteerde ook de voortgang van projecten, analyseerde gegevens en stelde uitgebreide rapporten op over elektrische studies. Daarnaast ontwikkelde ik specificaties voor de aanschaf van elektrische componenten en materialen, zodat deze overeenkwamen met projectbehoeften en -normen."
+      },
+      "secondPart": {
+        "title": "ELEKTRO-INGENIEUR",
+        "companyName": "ALSHEHABIE",
+        "period": "15/06/2016 – 01/09/2017 Tartous, Syrië",
+        "description": "Als Elektro-ingenieur bij Alshehabie ontwierp ik gedetailleerde PLC-schema's voor systeemrelais en bescherming, zodat elektrische systemen veilig en betrouwbaar konden werken. Ik ontwikkelde en beheerde het elektrische ontwerpdeel van projectplanningen, coördineerde taken om deadlines te halen en zorgde voor afstemming met de algemene projectplanningen. Door het toepassen van best practices in de branche zorgde ik voor optimale elektrische ontwerpen en stimuleerde ik continue procesverbeteringen, wat bijdroeg aan de efficiëntie en kwaliteit van projecten."
+      }
     }
-  }
+  
+  
 }
 

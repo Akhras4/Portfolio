@@ -24,7 +24,7 @@ export default function Section({
       }}
     >
       <div className="sec-con-1">
-        <TrainComponent startColor={startColor} middleColor={middleColor} endColor={endColor} />
+        <TrainComponent startColor={startColor} middleColor={middleColor} endColor={endColor} secondPart={secondPart} firstPart={firstPart}/>
       </div>
       <div className="sec-con-2" style={{ '--background-color': backgroundColor }}>
         <div className="section-info" style={{ '--backgroundColorInfo': backgroundColorInfo }}>
@@ -37,7 +37,7 @@ export default function Section({
                 {firstPart.companyName && <h2>{firstPart.companyName}</h2>}
                 {firstPart.period && <h4>{firstPart.period}</h4>}
                 </div>
-                {firstPart.description }
+                {firstPart.description &&<p>{firstPart.description}</p> }
                 {firstPart.docs && firstPart.docs.length > 0 && (
                   <div className="doc-img">
                     {firstPart.docs.map((img, index) => (
@@ -54,7 +54,7 @@ export default function Section({
                 {secondPart.companyName && <h2>{secondPart.companyName}</h2>}
                 {secondPart.period && <h4>{secondPart.period}</h4>}
                 </div>
-                {secondPart.description }
+                {secondPart.description &&<p>{secondPart.description}</p> }
                 {secondPart.doc && <Doc img={secondPart.doc} />}
               </div>
             )}
