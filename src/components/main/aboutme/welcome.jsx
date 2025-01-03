@@ -3,11 +3,13 @@ import bg from '../../../asset/video/bg.gif';
 import LanguageContext from '../../../context/context'
 import './welcome.css'
 import MyPhoto0 from "../../../asset/image/m.jpg"
-import MyPhoto1 from "../../../asset/image/my1.jpg"
+// import MyPhoto1 from "../../../asset/image/my1.jpg"
 import MyPhoto2 from "../../../asset/image/my2.jpg"
+import MyPhoto3 from "../../../asset/image/m1.jpg"
+import MyPhoto4 from "../../../asset/image/my3.JPG"
 import { motion } from "framer-motion";
 export default function Welcome() {
-  const MyPhoto = [MyPhoto0, MyPhoto2, MyPhoto1];
+  const MyPhoto = [MyPhoto3,MyPhoto0, MyPhoto2,MyPhoto4];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const { t } = React.useContext(LanguageContext)
